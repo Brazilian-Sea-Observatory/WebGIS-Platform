@@ -1,0 +1,3 @@
+[submodule "mercator_routine_products"]
+	path = mercator_routine_products
+	url = https://andr3lsm@bitbucket.org/lh_development/mercator_routine_products.git

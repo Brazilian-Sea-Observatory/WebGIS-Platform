@@ -1,0 +1,145 @@
+version: '3'
+services:
+  ftp:
+    image: fikipollo/vsftpd
+    ports:
+      - "21:21"
+    volumes:
+      - ./:/home/geoserver
+    environment:
+      FTP_USER: evx
+      FTP_PASS: f7uXdCrAdkb34HAe
+
+  jupyter:
+    build: ./jupyter
+    volumes:
+        - ./notebooks:/home/jovyan/work
+        - geoserver_data:/home/geoserver-data # vector_speed_forecast_daily
+        - ./mercator-server/wind-data:/home/leaflet_velocity
+  
+  mercator_db:
+    image: mysql:5.6
+    volumes:
+      - ./db:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: m3rc4t0r##
+      MYSQL_DATABASE: mercator_db
+      MYSQL_USER: mercator_user
+      MYSQL_PASSWORD: m3rc4t0r##
+      
+  frontend:
+    depends_on:
+      - backend
+        # - webserver
+    build: ./mercator-webapp
+    restart: always  
+    image: "mercator/frontend:latest"
+    network_mode: host
+  
+  backend:
+    depends_on: 
+      - mercator_db
+    volumes:
+      - ./mercator-backend:/usr/src/api/mercator-backend
+    image: "strapi/strapi:latest"
+    restart: always  
+    ports:
+      - "1337:1337"
+      - "4000:4000"
+    environment:
+      APP_NAME: mercator-backend
+      DATABASE_CLIENT: mysql
+      DATABASE_HOST: mercator_db
+      DATABASE_PORT: 3306
+      DATABASE_NAME: mercator_db
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: m3rc4t0r##
+    restart:
+      always
+  
+  webserver:
+    build: ./mercator-server
+    restart: always
+    image: "mercator-server:latest"
+    environment:
+      SPREAD_OIL_PATH: '/oil-data'
+    volumes:
+      - /home/maretec/Lagrangian_Global/BSO:/oil-data
+      - ./mercator-server/wind-data:/wind-data
+    ports:
+      - "8443:8443"
+      - "3000:3000"
+      - "8081:8081"
+    healthcheck:
+      test: ["CMD-SHELL", "['pm2-runtime', 'ecosystem.config.js', '--web']"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+  
+  db:
+    image: kartoza/postgis:11.0-2.5
+    volumes:
+       - geo-db-data:/var/lib/postgresql
+    ports:
+      - "25434:5432"
+    env_file:
+    - geoserver/docker-env/db.env
+    restart: on-failure
+    healthcheck:
+      test: "exit 0"
+
+  geoserver:
+    build: ./geoserver
+    # image: kartoza/geoserver:2.15.2
+    volumes:
+      # - ./geoserver_data:/opt/geoserver/data_dir
+      - geoserver_data:/opt/geoserver/data
+    ports:
+      - "8600:8080"
+    restart: on-failure
+    env_file:
+      - ./geoserver/docker-env/geoserver.env
+    depends_on:
+      - db
+    healthcheck:
+      test: curl --fail -s http://localhost:8080/ || exit 1
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+
+  db-dbbackups:
+    image: kartoza/pg-backup:11.0
+    volumes:
+      - db-backups:/backups
+    env_file:
+      - geoserver/docker-env/db-backups.env
+    restart: on-failure
+    depends_on:
+      - db
+
+  scripts:
+    build: ./mercator_routine_products
+    volumes:
+      - /home/ubuntu/ftplocal:/home/evx/ftp/files/
+      - geoserver_data:/home/geoserver/geoserver_data
+    depends_on:
+      # - geoserver
+      - db
+    restart: always
+
+volumes:
+  db-backups:
+  geoserver_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/maretec/mercator/geoserver_data 
+  geo-db-data:
+  pgdata:
+    driver: local
+
+      
