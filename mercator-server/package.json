@@ -1,0 +1,40 @@
+{
+  "name": "mercator-server",
+  "version": "1.0.0",
+  "description": "Tests using TypeScript and Node.JS",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon dist/index.js -w dist ; tsc --watch",
+    "build": "tsc -build tsconfig.json",
+    "start": "pm2 start dist/index.js --name=\"myapp-name\"",
+    "test": "jest"
+  },
+  "keywords": [
+    "node.js",
+    "typescript",
+    "js",
+    "test"
+  ],
+  "author": "Matheus Donizete <math.d@live.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pg": "^7.11.2",
+    "cors-anywhere": "^0.4.1",
+    "mime-types": "^2.1.22",
+    "mysql": "^2.17.1",
+    "pg": "^7.14.0",
+    "pm2": "^3.2.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/mime-types": "^2.1.0",
+    "@types/mysql": "^2.15.8",
+    "@types/node": "^10.12.14",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.8",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2"
+  }
+}

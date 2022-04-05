@@ -1,0 +1,47 @@
+{
+  "name": "sea-map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "@types/echarts": "^4.1.10",
+    "echarts": "^4.2.1",
+    "jquery": "^3.3.1",
+    "leaflet-rotatedmarker": "^0.2.0",
+    "leaflet-timedimension": "^1.1.0",
+    "leaflet-velocity": "^1.2.4",
+    "register-service-worker": "^1.0.0",
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-i18n": "^8.3.0",
+    "vue-property-decorator": "^7.3.0",
+    "vue-router": "^3.0.1",
+    "vue2-leaflet": "^1.0.2",
+    "vuetify": "^1.2.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@types/leaflet": "^1.4.4",
+    "@types/node": "^12.7.5",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-pwa": "^3.0.5",
+    "@vue/cli-plugin-typescript": "^3.0.5",
+    "@vue/cli-plugin-unit-jest": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.0.1",
+    "ts-jest": "^23.0.0",
+    "typescript": "^3.0.0",
+    "vue-cli-plugin-vuetify": "^0.2.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

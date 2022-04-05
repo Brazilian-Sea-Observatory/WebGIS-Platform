@@ -89,5 +89,9 @@ db/*
 
 ## File json
 *.json
+#Não ignora package.json, necessário para npm run
+!package-lock.json
+!package.json
+!tsconfig.json
 
 geoserver/geoserver_data/*
