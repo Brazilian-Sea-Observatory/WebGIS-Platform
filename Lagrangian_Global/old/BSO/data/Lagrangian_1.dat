@@ -1,0 +1,220 @@
+IGNORE_ON : 1
+
+<BeginGeneralKeywords>
+OUTPUT_TIME     : 0 3600.
+!DT_PARTIC     : 1800
+!PARTIC_BOX    : ../GeneralData/Boxes/NewBoxes.dat
+!TIME_SERIE_LOCATION : ../../../../GeneralData/timeseries/TimeSeriesLocation.dat
+!OUTPUT_CONC     : 2
+
+THINWALLS_FILE	      : ../../GeneralData/polygons/Land/linhadecostaprsc.xy
+!THINWALLS_FILE	      : ../../GeneralData/polygons/Land/linhadecosta_global.xy
+<EndGeneralKeywords>
+
+!<BeginModelPriority>
+!CMEMS
+!<EndModelPriority>
+
+
+!<BeginOrigin_Clone>
+CLONE       : Default
+DEFAULT       : 0
+ORIGIN_NAME     : Clone1
+COMPUTE_PLUME     : 0
+POSITION_COORDINATES  : -48.55 -25.48
+!POSITION_COORDINATES  : -42.5 33.5
+FLOW        : 1.0
+!<EndOrigin_Clone>
+
+<BeginOrigin>
+GROUP_ID      : 1
+ORIGIN_NAME     : Default
+
+!DEFAULT       : 1
+
+NBR_PARTIC      : 10
+
+!EMISSION_SPATIAL        : Point/Accident/Box  
+EMISSION_SPATIAL    : Point
+
+!EMISSION_TEMPORAL       : Continuous/Instantaneous
+EMISSION_TEMPORAL   : Instantaneous 
+FLOW        : 1.0
+
+!START_PARTIC_EMIT       : YYYY MM DD HH MM SS   
+!STOP_PARTIC_EMIT        : YYYY MM DD HH MM SS
+
+POINT_VOLUME    : 1000   
+!ACCIDENT_METHOD   : 1      
+FLOAT       : 0
+
+OLD       : 0
+
+POSITION_COORDINATES  : -48. 2.
+!POSITION_COORDINATES  : -47.0 4.0
+
+MOVEMENT      : SullivanAllen
+!MOVEMENT      : NotRandom
+
+DEPTH_METERS    : 0.0
+ADVECTION     : 1
+ADVECTION_Z   : 0
+!WINDCOEF      : 0.03
+THEORIC_AREA    : 1
+
+VARVELHX      : 0.01
+VARVELH       : 0.0002
+TURB_V      : Constant
+VARVELVX      : 0.005
+VARVELV       : 0.001
+
+<<BeginProperty>>
+NAME        : fecal coliforms
+UNITS       : MPN/100ml
+CONCENTRATION     : 1e6
+
+!MIN_VALUE     : 1
+T90_VARIABLE    : 0
+!T90_VAR_METHOD    : 3
+T90       : 1e15
+!T90_FILE      : ../data/DailyT90.srw
+!T90_COLUMN      : 2
+
+OUTPUT_HDF      : 0
+TIME_SERIE      : 0
+
+AMBIENT_CONC    : 0
+<<EndProperty>>
+
+<<BeginProperty>>
+NAME        : salinity
+UNITS       : psu
+CONCENTRATION     : 0.0
+OUTPUT_HDF      : 0
+TIME_SERIE      : 0
+<<EndProperty>>
+
+<<BeginProperty>>
+NAME        : temperature
+UNITS       : celcius
+CONCENTRATION     : 25
+OUTPUT_HDF      : 0
+TIME_SERIE      : 0
+<<EndProperty>>
+<EndOrigin>
+
+<BeginMeteoOcean>
+<<BeginProperty>>
+NAME : velocity U
+!FIELD_NAME : u
+DESCRIPTION : velocity from operational models
+UNITS : m/s
+MASK_DIM : -99
+FILE_LIST_MODE : 1
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Babitonga/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/CEP/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/PR_SC/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Plataforma_SE/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+!<<<BeginMeteoOceanFiles>>>
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190918_20190919/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190919_20190920/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190920_20190921/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190921_20190922/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190905_20190906/CMEMS.hdf5
+!<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+
+<<BeginProperty>>
+NAME : velocity V
+!FIELD_NAME : v
+DESCRIPTION : velocity from operational models
+UNITS : m/s
+MASK_DIM : -99
+FILE_LIST_MODE : 1
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Babitonga/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/CEP/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/PR_SC/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Plataforma_SE/20190918_20190919/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20190919_20190920/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20190920_20190921/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20190921_20190922/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+!<<<BeginMeteoOceanFiles>>>
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190918_20190919/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190919_20190920/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190920_20190921/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190921_20190922/CMEMS.hdf5
+C:/Aplica/Lagrangian_Global/GeneralData/Solutions/CMEMS/20190905_20190906/CMEMS.hdf5
+!<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+
+!<<BeginProperty>>
+NAME	: wind velocity X
+!FIELD_NAME : x_wind
+DESCRIPTION : wind from operational models
+UNITS	: m/s
+MASK_DIM : 2
+!FILE_LIST_MODE   : 1
+<<<BeginMeteoOceanFiles>>>
+F:/GFS/Backup/20190918_20190919/gfs.hdf5
+F:/GFS/Backup/20190919_20190920/gfs.hdf5
+F:/GFS/Backup/20190920_20190921/gfs.hdf5
+F:/GFS/Backup/20190921_20190922/gfs.hdf5
+F:/GFS/Backup/20190905_20190906/gfs.hdf5
+<<<EndMeteoOceanFiles>>>
+!<<EndProperty>>
+!<<BeginProperty>>
+NAME	: wind velocity Y
+!FIELD_NAME : y_wind
+DESCRIPTION : wind from operational models
+UNITS	: m/s
+MASK_DIM : 2
+!FILE_LIST_MODE   : 1
+<<<BeginMeteoOceanFiles>>>
+F:/GFS/Backup/20190918_20190919/gfs.hdf5
+F:/GFS/Backup/20190919_20190920/gfs.hdf5
+F:/GFS/Backup/20190920_20190921/gfs.hdf5
+F:/GFS/Backup/20190921_20190922/gfs.hdf5
+F:/GFS/Backup/20190905_20190906/gfs.hdf5
+<<<EndMeteoOceanFiles>>>
+!<<EndProperty>>
+<EndMeteoOcean>
+
+
+ 

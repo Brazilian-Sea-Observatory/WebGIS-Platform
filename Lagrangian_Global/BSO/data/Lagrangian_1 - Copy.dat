@@ -1,0 +1,157 @@
+IGNORE_ON : 1
+
+<BeginGeneralKeywords>
+OUTPUT_TIME     : 0 43200.
+DT_PARTIC     : 600
+THINWALLS_FILE      : ..\..\GeneralData\polygons\Land\linhadecostaprsc.xy
+OUTPUT_TRACER_INFO : 1
+<EndGeneralKeywords>
+
+<BeginOrigin>
+GROUP_ID                : 1
+ORIGIN_NAME             : Spill
+
+NBR_PARTIC              : 1
+
+EMISSION_SPATIAL        : Point
+
+POSITION_COORDINATES  : -34.7 -10.9
+
+EMISSION_TEMPORAL       : Continuous
+
+START_PARTIC_EMIT       : 2019 8 20 0 0 0 
+STOP_PARTIC_EMIT        : 2019 9 06 0 0 0 
+
+FLOAT                   : 1
+
+DEPTH_FROM_FREE_SURFACE : 0.
+ADVECTION               : 1
+ADVECTION_Z             : 0
+
+WINDCOEF                : 0.03
+WINDDRIFTCORRECTION     : 1
+WINDDRIFTANGLE          : -45
+STOKES_DRIFT            : 0
+
+POINT_VOLUME            : 1.
+FLOW                    : 1.
+
+MOVEMENT                : SullivanAllen
+VARVELHX                : 0.05
+VARVELH                 : 0.01
+TURB_V                  : Constant
+
+OLD                     : 0
+<EndOrigin>
+
+<BeginMeteoOcean>
+<<BeginProperty>>
+NAME : velocity U
+DESCRIPTION : velocity from operational models
+UNITS : m/s
+MASK_DIM : -99
+!FILE_LIST_MODE : 1
+<<<BeginMeteoOceanFiles>>>
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190820_20190821\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190821_20190822\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190822_20190823\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190823_20190824\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190824_20190825\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190825_20190826\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190826_20190827\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190827_20190828\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190828_20190829\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190829_20190830\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190830_20190831\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190831_20190901\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190901_20190902\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190902_20190903\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190903_20190904\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190904_20190905\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190905_20190906\CMEMS.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+
+<<BeginProperty>>
+NAME : velocity V
+DESCRIPTION : velocity from operational models
+UNITS : m/s
+MASK_DIM : -99
+!FILE_LIST_MODE : 1
+<<<BeginMeteoOceanFiles>>>
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190820_20190821\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190821_20190822\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190822_20190823\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190823_20190824\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190824_20190825\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190825_20190826\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190826_20190827\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190827_20190828\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190828_20190829\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190829_20190830\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190830_20190831\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190831_20190901\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190901_20190902\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190902_20190903\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190903_20190904\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190904_20190905\CMEMS.hdf5
+C:\Aplica\Lagrangian_Global\GeneralData\Solutions\CMEMS\20190905_20190906\CMEMS.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+
+<<BeginProperty>>
+NAME    : wind velocity X
+DESCRIPTION : wind from operational models
+UNITS   : m/s
+MASK_DIM : 2
+!FILE_LIST_MODE   : 1
+<<<BeginMeteoOceanFiles>>>
+F:\GFS\Backup\20190820_20190821\gfs.hdf5
+F:\GFS\Backup\20190821_20190822\gfs.hdf5
+F:\GFS\Backup\20190822_20190823\gfs.hdf5
+F:\GFS\Backup\20190823_20190824\gfs.hdf5
+F:\GFS\Backup\20190824_20190825\gfs.hdf5
+F:\GFS\Backup\20190825_20190826\gfs.hdf5
+F:\GFS\Backup\20190826_20190827\gfs.hdf5
+F:\GFS\Backup\20190827_20190828\gfs.hdf5
+F:\GFS\Backup\20190828_20190829\gfs.hdf5
+F:\GFS\Backup\20190829_20190830\gfs.hdf5
+F:\GFS\Backup\20190830_20190831\gfs.hdf5
+F:\GFS\Backup\20190831_20190901\gfs.hdf5
+F:\GFS\Backup\20190901_20190902\gfs.hdf5
+F:\GFS\Backup\20190902_20190903\gfs.hdf5
+F:\GFS\Backup\20190903_20190904\gfs.hdf5
+F:\GFS\Backup\20190904_20190905\gfs.hdf5
+F:\GFS\Backup\20190905_20190906\gfs.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+<<BeginProperty>>
+NAME    : wind velocity Y
+DESCRIPTION : wind from operational models
+UNITS   : m/s
+MASK_DIM : 2
+!FILE_LIST_MODE   : 1
+<<<BeginMeteoOceanFiles>>>
+F:\GFS\Backup\20190820_20190821\gfs.hdf5
+F:\GFS\Backup\20190821_20190822\gfs.hdf5
+F:\GFS\Backup\20190822_20190823\gfs.hdf5
+F:\GFS\Backup\20190823_20190824\gfs.hdf5
+F:\GFS\Backup\20190824_20190825\gfs.hdf5
+F:\GFS\Backup\20190825_20190826\gfs.hdf5
+F:\GFS\Backup\20190826_20190827\gfs.hdf5
+F:\GFS\Backup\20190827_20190828\gfs.hdf5
+F:\GFS\Backup\20190828_20190829\gfs.hdf5
+F:\GFS\Backup\20190829_20190830\gfs.hdf5
+F:\GFS\Backup\20190830_20190831\gfs.hdf5
+F:\GFS\Backup\20190831_20190901\gfs.hdf5
+F:\GFS\Backup\20190901_20190902\gfs.hdf5
+F:\GFS\Backup\20190902_20190903\gfs.hdf5
+F:\GFS\Backup\20190903_20190904\gfs.hdf5
+F:\GFS\Backup\20190904_20190905\gfs.hdf5
+F:\GFS\Backup\20190905_20190906\gfs.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+<EndMeteoOcean>
+
+
+ 

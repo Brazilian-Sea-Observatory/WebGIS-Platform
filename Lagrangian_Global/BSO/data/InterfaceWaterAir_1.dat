@@ -1,0 +1,8 @@
+!OUTPUT_TIME             : 0. 3600.
+
+<begin_rugosity>
+INITIALIZATION_METHOD   : CONSTANT
+DEFAULTVALUE            : 0.0025
+REMAIN_CONSTANT         : 0
+<end_rugosity>
+

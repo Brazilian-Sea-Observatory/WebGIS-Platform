@@ -1,0 +1,92 @@
+<begin_file>
+ 
+ACTION : CONVERT NETCDF CF TO HDF5 MOHID
+HDF5_OUT : 1
+NETCDF_OUT : 0
+OUTPUT_NETCDF_FILE : NULL.nc
+OUTPUTFILENAME           : CMEMS.hdf5
+ 
+<<begin_time>>
+NETCDF_NAME : time
+<<end_time>>
+ 
+<<begin_grid>>
+NETCDF_NAME_LAT : latitude
+NETCDF_NAME_LONG : longitude
+NETCDF_NAME_MAPPING : uo
+MAPPING_LIMIT : -32000
+INVERT_LAYER_ORDER : 1
+NETCDF_NAME_DEPTH   : depth
+BATHYM_FROM_MAP : 0
+BATHYM_FILENAME : CMEMS_GridData.dat
+<<end_grid>>
+ 
+PROPERTIES_NUMBER : 6
+ 
+<<begin_field>>
+NETCDF_NAME : uo
+NAME : velocity U
+UNITS : m/s
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  6.103701889514923E-4
+<<end_field>>
+ 
+<<begin_field>>
+NETCDF_NAME : zos
+NAME : water level
+UNITS : m
+DESCRIPTION : MOHID
+DIM : 2
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  3.0518509447574615E-4
+<<end_field>>
+ 
+<<begin_field>>
+NETCDF_NAME : thetao
+NAME : temperature
+UNITS : ºC
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 21.
+MULTIPLY_FACTOR : 7.324442267417908E-4
+<<end_field>>
+ 
+<<begin_field>>
+NETCDF_NAME : so
+NAME : salinity
+UNITS : psu
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : -0.0015259254723787308
+MULTIPLY_FACTOR :  0.0015259254723787308
+<<end_field>>
+ 
+<<begin_field>>
+NETCDF_NAME : vo
+NAME : velocity V
+UNITS : m/s
+DESCRIPTION : MOHID
+DIM : 3
+ADD_FACTOR      : 0.
+MULTIPLY_FACTOR :  6.103701889514923E-4
+<<end_field>>
+ 
+<<begin_field>>
+NETCDF_NAME : velocity_modulus
+NAME : velocity modulus
+UNITS : m/s
+DESCRIPTION : MOHID
+DIM : 3
+VECTOR_INTENSITY         : 1
+VECTOR_X                 : velocity U
+VECTOR_Y                 : velocity V
+<<end_field>>
+ 
+<<begin_input_files>>
+CMEMS.nc
+<<end_input_files>>
+ 
+<end_file>
+ 

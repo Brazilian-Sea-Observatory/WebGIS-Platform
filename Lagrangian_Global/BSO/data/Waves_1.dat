@@ -1,0 +1,34 @@
+WAVE_PERIOD              : 1
+WAVE_HEIGHT              : 1
+WAVE_DIRECTION           : 1
+RADIATION_TENSION        : 1
+WAVE_UBW                 : 0
+
+
+OUTPUT_TIME              : 0 3600
+
+<begin_waveperiod>
+NAME                     : mean wave period
+DEFAULTVALUE             : 12.0
+REMAIN_CONSTANT          : 1
+<end_waveperiod>
+
+
+<begin_waveheight>
+NAME                     : significant wave height
+DEFAULTVALUE             : 0.5
+REMAIN_CONSTANT          : 1
+<end_waveheight>
+
+<begin_wavedirection>
+NAME                     : mean wave direction
+DEFAULTVALUE             : 0.0
+REMAIN_CONSTANT          : 1
+<end_wavedirection>
+
+<begin_radiationstress>
+NAME                     : wave stress
+DEFAULTVALUE             : 0.0 0.0
+REMAIN_CONSTANT          : 1
+<end_radiationstress>
+

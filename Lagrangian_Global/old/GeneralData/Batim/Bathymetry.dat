@@ -1,0 +1,13 @@
+ILB_IUB                 : 1         44
+JLB_JUB                 : 1         89
+ORIGIN                  : -178.0         -88.0
+GRID_ANGLE              : 0.000
+COORD_TIP  :           4
+ LATITUDE   :   0.00000    
+ LONGITUDE  :  0.000000   
+ CONSTANT_IN_SPACE : 1 
+ DEFAULT_VALUE : 50.0
+ CONSTANT_SPACING_X : 1
+ DX : 4.0
+ CONSTANT_SPACING_Y : 1
+ DY : 4.0

@@ -1,0 +1,13 @@
+<begin_rugosity>
+INITIALIZATION_METHOD        : CONSTANT
+DEFAULTVALUE                 : 0.0025
+<end_rugosity>
+
+!WAVETENSION    : 1
+!SHEAR_STRESS_METHOD : 2
+
+!<begin_waverugosity>
+!INITIALIZATION_METHOD          : CONSTANT
+!DEFAULTVALUE                   : 9e-3
+!REMAIN_CONSTANT                : 0
+!<end_waverugosity>

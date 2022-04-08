@@ -1,0 +1,142 @@
+ OUTWATCH                  ConvertToHDF5             Do not have               From File                 ************                                                 YES
+ ACTION                    ConvertToHDF5             Do not have               From Block                CONVERT NETCDF CF TO HDF5 MOHID                              YES
+ OUTPUT_GRID_FILENAME      ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                ************                                                 YES
+ OUTPUTFILENAME            ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                CMEMS.hdf5                                                   YES
+ OUTPUT_GEOMETRY_FILENAME  ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                ************                                                 YES
+ PROPERTIES_NUMBER         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                6                                                            YES
+ HDF5_OUT                  ModuleNetCDFCF_2_HDF5MOHI TRUE                      From Block                TRUE                                                         YES
+ NETCDF_OUT                ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block                FALSE                                                        YES
+ READ_INVERT_XY            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block                FALSE                                                        YES
+ WINDOW_OUT                ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                                                                             YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI time                      From Block In Block       time                                                         YES
+ REFERENCE_DATE_IN         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                                                                             YES
+ REFERENCE_DATE_OUT        ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block                                                                             YES
+ DATE_TYPE_IN              ModuleNetCDFCF_2_HDF5MOHI 2                         From Block                2                                                            YES
+ REF_DATE_ATTRIBUTE        ModuleNetCDFCF_2_HDF5MOHI TRUE                      From Block                TRUE                                                         YES
+ REF_DATE_ATTRIBUTE_NAME   ModuleNetCDFCF_2_HDF5MOHI units                     From Block                units                                                        YES
+ REF_DATE_OFF_SET          ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block                0.0000000E+00                                                YES
+ NETCDF_DIM                ModuleNetCDFCF_2_HDF5MOHI time                      From Block In Block       time                                                         YES
+ NETCDF_NAME_LAT           ModuleNetCDFCF_2_HDF5MOHI latitude                  From Block In Block       latitude                                                     YES
+ NETCDF_NAME_LONG          ModuleNetCDFCF_2_HDF5MOHI longitude                 From Block In Block       longitude                                                    YES
+ STARTS_180W               ModuleNetCDFCF_2_HDF5MOHI TRUE                      From Block In Block       TRUE                                                         YES
+ NETCDF_NAME_DEPTH         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       depth                                                        YES
+ NETCDF_NAME_BATHYM        ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       ************                                                 YES
+ BATHYM_FILENAME           ModuleNetCDFCF_2_HDF5MOHI Batim.dat                 From Block In Block       CMEMS_GridData.dat                                           YES
+ BATHYM_FROM_MAP           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BATHYM_TYPE_IN            ModuleNetCDFCF_2_HDF5MOHI 2                         From Block                2                                                            YES
+ BATHYM_TYPE_IN            ModuleNetCDFCF_2_HDF5MOHI 2                         From Block                2                                                            YES
+ FIELD_TYPE_IN             ModuleNetCDFCF_2_HDF5MOHI 2                         From Block                2                                                            YES
+ BATHYM_DEFAULT            ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       0.0000000E+00                                                YES
+ NETCDF_NAME_MAPPING       ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       uo                                                           YES
+ MAPPING_LIMIT             ModuleNetCDFCF_2_HDF5MOHI 0.5000000                 From Block In Block       -32000.00                                                    YES
+ MAPPING_INSTANT           ModuleNetCDFCF_2_HDF5MOHI 1                         From Block In Block       1                                                            YES
+ GEO_VERT                  ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       2                                                            YES
+ GEO_SIGMA                 ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ GEO_INTERPOLATE           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ GEO_POSITIVE              ModuleNetCDFCF_2_HDF5MOHI down                      From Block In Block       down                                                         YES
+ INVERT_LAYER_ORDER        ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       TRUE                                                         YES
+ ROMS_DISTORTION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       uo                                                           YES
+ ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       0.0000000E+00                                                YES
+ MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       6.1037019E-04                                                YES
+ DIM                       ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       3                                                            YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity U                                                   YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       MOHID                                                        YES
+ DIR_TO_VECTOR             ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_INTENSITY          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WIND_DIRECTION            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_ROTATION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BEAUFORT_SCALE            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WAVE_BEAUFORT_SCALE       ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_X                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_Y                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ RELATIVE_HUMIDITY         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       FALSE                                                        YES
+ METEO_TO_ALGEBRIC         ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       zos                                                          YES
+ ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       0.0000000E+00                                                YES
+ MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       3.0518509E-04                                                YES
+ DIM                       ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       2                                                            YES
+ NAME                      Unknown Client            Do not have               From Block In Block       water level                                                  YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m                                                            YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       MOHID                                                        YES
+ DIR_TO_VECTOR             ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_INTENSITY          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WIND_DIRECTION            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_ROTATION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BEAUFORT_SCALE            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WAVE_BEAUFORT_SCALE       ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_X                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_Y                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ RELATIVE_HUMIDITY         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       FALSE                                                        YES
+ METEO_TO_ALGEBRIC         ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       thetao                                                       YES
+ ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       21.00000                                                     YES
+ MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       7.3244423E-04                                                YES
+ DIM                       ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       3                                                            YES
+ NAME                      Unknown Client            Do not have               From Block In Block       temperature                                                  YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       ºC                                                           YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       MOHID                                                        YES
+ DIR_TO_VECTOR             ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_INTENSITY          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WIND_DIRECTION            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_ROTATION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BEAUFORT_SCALE            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WAVE_BEAUFORT_SCALE       ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_X                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_Y                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ RELATIVE_HUMIDITY         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       FALSE                                                        YES
+ METEO_TO_ALGEBRIC         ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       so                                                           YES
+ ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       -1.5259255E-03                                               YES
+ MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       1.5259255E-03                                                YES
+ DIM                       ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       3                                                            YES
+ NAME                      Unknown Client            Do not have               From Block In Block       salinity                                                     YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       psu                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       MOHID                                                        YES
+ DIR_TO_VECTOR             ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_INTENSITY          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WIND_DIRECTION            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_ROTATION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BEAUFORT_SCALE            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WAVE_BEAUFORT_SCALE       ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_X                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_Y                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ RELATIVE_HUMIDITY         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       FALSE                                                        YES
+ METEO_TO_ALGEBRIC         ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       vo                                                           YES
+ ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       0.0000000E+00                                                YES
+ MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       6.1037019E-04                                                YES
+ DIM                       ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       3                                                            YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity V                                                   YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       MOHID                                                        YES
+ DIR_TO_VECTOR             ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_INTENSITY          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WIND_DIRECTION            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_ROTATION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BEAUFORT_SCALE            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WAVE_BEAUFORT_SCALE       ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_X                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_Y                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ RELATIVE_HUMIDITY         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       FALSE                                                        YES
+ METEO_TO_ALGEBRIC         ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ NETCDF_NAME               ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       velocity_modulus                                             YES
+ ADD_FACTOR                ModuleNetCDFCF_2_HDF5MOHI 0.0000000E+00             From Block In Block       0.0000000E+00                                                YES
+ MULTIPLY_FACTOR           ModuleNetCDFCF_2_HDF5MOHI 1.000000                  From Block In Block       1.000000                                                     YES
+ DIM                       ModuleNetCDFCF_2_HDF5MOHI 2                         From Block In Block       3                                                            YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity modulus                                             YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       MOHID                                                        YES
+ DIR_TO_VECTOR             ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_INTENSITY          ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       TRUE                                                         YES
+ WIND_DIRECTION            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_ROTATION           ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ BEAUFORT_SCALE            ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ WAVE_BEAUFORT_SCALE       ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ VECTOR_X                  ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       velocity U                                                   YES
+ VECTOR_Y                  ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       velocity V                                                   YES
+ CENTER_X                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ CENTER_Y                  ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES
+ RELATIVE_HUMIDITY         ModuleNetCDFCF_2_HDF5MOHI Do not have               From Block In Block       FALSE                                                        YES
+ METEO_TO_ALGEBRIC         ModuleNetCDFCF_2_HDF5MOHI FALSE                     From Block In Block       FALSE                                                        YES

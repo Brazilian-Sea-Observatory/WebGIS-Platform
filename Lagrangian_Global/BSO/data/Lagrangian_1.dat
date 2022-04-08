@@ -1,0 +1,124 @@
+IGNORE_ON : 1
+
+<BeginGeneralKeywords>
+OUTPUT_TIME     : 0 3600.
+DT_PARTIC     : 600
+THINWALLS_FILE      : ../../GeneralData/polygons/Land/linhadecostaprsc.xy
+OUTPUT_TRACER_INFO : 1
+<EndGeneralKeywords>
+
+<BeginOrigin>
+GROUP_ID                : 1
+ORIGIN_NAME             : Spill
+
+NBR_PARTIC : 1
+
+EMISSION_SPATIAL        : Point
+
+POSITION_COORDINATES : -40.430 -0.352
+
+EMISSION_TEMPORAL : Continuous
+
+START_PARTIC_EMIT : 2022 03 30 00 0 0
+STOP_PARTIC_EMIT : 2022 04 01 00 0 0
+
+FLOAT                   : 1
+
+DEPTH_FROM_FREE_SURFACE : 0.
+ADVECTION               : 1
+ADVECTION_Z             : 0
+
+WINDCOEF                : 0.03
+WINDDRIFTCORRECTION     : 1
+WINDDRIFTANGLE          : -45
+STOKES_DRIFT            : 0
+
+POINT_VOLUME            : 1.
+FLOW                    : 1.
+
+MOVEMENT                : SullivanAllen
+VARVELHX                : 0.05
+VARVELH                 : 0.01
+TURB_V                  : Constant
+
+OLD                     : 0
+<EndOrigin>
+
+<BeginMeteoOcean>
+<<BeginProperty>>
+NAME : velocity U
+DESCRIPTION : velocity from operational models
+UNITS : m/s
+MASK_DIM : -99
+FILE_LIST_MODE : 1
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Babitonga/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/CEP/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/PR_SC/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Plataforma_SE/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/CMEMS/Brasil/20220330_20220331/CMEMS.hdf5
+/home/maretec/ftplocal/CMEMS/Brasil/20220331_20220401/CMEMS.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+<<BeginProperty>>
+NAME : velocity V
+DESCRIPTION : velocity from operational models
+UNITS : m/s
+MASK_DIM : -99
+FILE_LIST_MODE : 1
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Babitonga/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Babitonga/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/CEP/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/CEP/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/PR_SC/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/PR_SC/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/Plataforma_SE/20220330_20220331/Hydrodynamic_2_Surface.hdf5
+/home/maretec/ftplocal/Plataforma_SE/20220331_20220401/Hydrodynamic_2_Surface.hdf5
+<<<EndMeteoOceanFiles>>>
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/CMEMS/Brasil/20220330_20220331/CMEMS.hdf5
+/home/maretec/ftplocal/CMEMS/Brasil/20220331_20220401/CMEMS.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+<<BeginProperty>>
+NAME : wind velocity X
+DESCRIPTION : wind from operational models
+UNITS : m/s
+MASK_DIM : -99
+FILE_LIST_MODE : 0
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/GFS/20220330_20220331/gfs.hdf5
+/home/maretec/ftplocal/GFS/20220331_20220401/gfs.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+<<BeginProperty>>
+NAME : wind velocity Y
+DESCRIPTION : wind from operational models
+UNITS : m/s
+MASK_DIM : -99
+FILE_LIST_MODE : 0
+<<<BeginMeteoOceanFiles>>>
+/home/maretec/ftplocal/GFS/20220330_20220331/gfs.hdf5
+/home/maretec/ftplocal/GFS/20220331_20220401/gfs.hdf5
+<<<EndMeteoOceanFiles>>>
+<<EndProperty>>
+<EndMeteoOcean>

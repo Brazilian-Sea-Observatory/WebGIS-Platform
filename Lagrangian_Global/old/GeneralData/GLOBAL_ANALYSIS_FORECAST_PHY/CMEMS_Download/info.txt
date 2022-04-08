@@ -1,0 +1,21 @@
+http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=GLOBAL_ANALYSIS_FORECAST_PHY_001_024
+
+To request data, you can also use the Python script. This page should help you to enter your command-line from the shell of your system (Linux/Unix/windows). 
+
+Python [2.7.0 to 2.7.5] is required in order to execute the Motu Python script.Python can be downloaded here. 
+
+You can download the Motu Python Client package here. 
+
+To execute your extraction through the Motu Python Client, type (copy/paste) the command-line below on your system command prompt. 
+
+path_to_your_python_bin_directory/python path_to_your_motu_python_script_directory/motu-client.py -u your_user(1) -p your_password(1) -m http://nrtcmems.mercator-ocean.fr/motu-web/Motu -s GLOBAL_ANALYSIS_FORECAST_PHY_001_024-TDS -d global-analysis-forecast-phy-001-024 -x -54.5 -X -40.583332 -y -3.75 -Y 9.75 -t "2017-01-01 12:00:00" -T "2017-01-02 12:00:00" -z 0.494 -Z 5727.9171 -v zos -v so -v thetao -v uo -v vo -o your_output_directory(1) -f your_output_file_name(1) --proxy-server your_proxy_server_url:your_proxy_port_number(2) --proxy-user your_proxy_user_login(3) --proxy-pwd your_proxy_user_password(3)
+
+
+[1] - Value must be replaced by yourself.
+[2] - If you use an HTTP proxy, replace the value by your proxy url and port number: e.g. 'http://myproxy.org:8080'. If you don't use HTTP proxy, remove this option.
+[3] - If you use an HTTP proxy with authentication, replace the value by your login and password. If you don't need to authenticate to your proxy, remove these options.
+
+
+Full documentation is available in the Motu Python Client package. 
+
+To get help on the Motu Python Client, type : 'path_to_your_python_bin_directory/python path_to_your_motu_python_script_directory/motu-client.py --help' on your system command prompt. 

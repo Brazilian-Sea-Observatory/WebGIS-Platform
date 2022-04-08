@@ -1,0 +1,589 @@
+ OUTWATCH                  Unknown Client            Do not have               From File                 ../res/Outwatch_1.txt                                        YES
+ DT_LOG                    Unknown Client            Do not have               From File                 ../res/DTLog_1.txt                                           YES
+ IN_MODEL                  Unknown Client            Do not have               From File                 ../data/Model_1.dat                                          YES
+ START                     Model                     Do not have               From File                 2022.00000000000        3.00000000000000        30.000000000 YES
+ END                       Model                     Do not have               From File                 2022.00000000000        4.00000000000000        1.0000000000 YES
+ DT                        Model                     Do not have               From File                 3600.00000000000                                             YES
+ VARIABLEDT                Model                     FALSE                     From File                 FALSE                                                        YES
+ GMTREFERENCE              Model                     0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ DT_PREDICTION_INTERVAL    Model                     60.0000000000000          From File                 60.0000000000000                                             YES
+ SEDIMENT_COLUMN           ModuleModel               FALSE                     From File                 FALSE                                                        YES
+ SEDIMENT                  ModuleModel               FALSE                     From File                 FALSE                                                        YES
+ LAGRANGIAN                ModuleModel               FALSE                     From File                 TRUE                                                         YES
+ WAVES                     ModuleModel               FALSE                     From File                 FALSE                                                        YES
+ NO_ISOLATED_CELLS         ModuleModel               TRUE                      From File                 TRUE                                                         YES
+ STOP_ON_BATHYMETRY_CHANGE ModuleModel               TRUE                      From File                 TRUE                                                         YES
+ BACKTRACKING              ModuleModel               FALSE                     From File                 FALSE                                                        YES
+ IN_BATIM                  Unknown Client            Do not have               From File                 ../../GeneralData/Batim/CMEMS/Brasil/CMEMS_GridData.dat      YES
+ ILB_IUB                   HorizontalGrid            Do not have               From File                 1         599                                                YES
+ JLB_JUB                   HorizontalGrid            Do not have               From File                 1         479                                                YES
+ HALOPOINTS                HorizontalGrid            3                         From File                 3                                                            YES
+ COORD_TIP                 HorizontalGrid            Do not have               From File                 4                                                            YES
+ LATITUDE                  HorizontalGrid            Do not have               From File                 45.0000000000000                                             YES
+ LONGITUDE                 HorizontalGrid            Do not have               From File                 -8.00000000000000                                            YES
+ DATUM                     HorizontalGrid            3                         From File                 3                                                            YES
+ EASTING                   HorizontalGrid            0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ NORTHING                  HorizontalGrid            0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ PROJ_TYPE                 HorizontalGrid            11                        From File                 11                                                           YES
+ SP1                       HorizontalGrid            30.0000000000000          From File                 30.0000000000000                                             YES
+ SP2                       HorizontalGrid            60.0000000000000          From File                 60.0000000000000                                             YES
+ ORIGIN                    HorizontalGrid            Do not have               From File                 0.000000000000000E+000  0.000000000000000E+000               YES
+ GRID_ANGLE                HorizontalGrid            0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ BORDER_LIMITS             ModuleHorizontalGrid      Do not have               From File                                                                              YES
+ SUBMODEL_WINDOW           ModuleModel               Do not have               From File                                                                              YES
+ FILL_VALUE                ModuleGridData            -99.0000000000000         From File                 -99.0000000000000                                            YES
+ TYPE_ZUV                  ModuleGridData            Z                         From File                 Z                                                            YES
+ EVOLUTION                 ModuleGridData            FALSE                     From File                 FALSE                                                        YES
+ CONSTANT_IN_SPACE         ModuleGridData            FALSE                     From File                 FALSE                                                        YES
+ DEFAULT_VALUE             ModuleGridData            0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ DOMAIN                    Unknown Client            Do not have               From File                 ../data/Geometry_1.dat                                       YES
+ WINDOW                    ModuleGeometry            FALSE                     From File                 FALSE                                                        YES
+ MINIMUMDEPTH              ModuleGeometry            0.100000000000000         From File                 0.100000000000000                                            YES
+ FACES_OPTION              ModuleGeometry            2                         From File                 2                                                            YES
+ FACES_OPTION              ModuleGeometry            2                         From File                 2                                                            YES
+ REMOVE_LAND_BOTTOM_LAYERS ModuleGeometry            FALSE                     From File                 FALSE                                                        YES
+ ID                        ModuleGeometry            Do not have               From Block                1                                                            YES
+ TYPE                      ModuleGeometry            Do not have               From Block                SIGMA                                                        YES
+ LAYERS                    ModuleGeometry            Do not have               From Block                1                                                            YES
+ EQUIDISTANT               ModuleGeometry            0.000000000000000E+000    From Block                0.000000000000000E+000                                       YES
+ LAYERTHICKNESS            ModuleGeometry            Do not have               From Block                1.00000000000000                                             YES
+ LAGRANGIAN                ModuleGeometry            FALSE                     From Block                FALSE                                                        YES
+ TOLERANCEDEPTH            ModuleGeometry            5.000000000000000E-002    From Block                5.000000000000000E-002                                       YES
+ DOMAINDEPTH               ModuleGeometry            Do not have               From Block                -99.0000000000000                                            YES
+ ROMS_DISTORTION           ModuleGeometry            FALSE                     From Block                FALSE                                                        YES
+ SIGMA_Z_SURFACE           ModuleGeometry            FALSE                     From Block                FALSE                                                        YES
+ ID                        ModuleGeometry            Do not have               From Block                1                                                            YES
+ FACES_IMPERMEABILITY      ModuleGeometry            FALSE                     From File                 FALSE                                                        YES
+ IN_TURB                   Unknown Client            Do not have               From File                 ../data/Turbulence_1.dat                                     YES
+ TURB_HDF                  Unknown Client            Do not have               From File                 ../res/Turbulence_1.hdf                                      YES
+ MODTURB                   ModuleTurbulence          Do not have               From File                 ************                                                 YES
+ MODVISH                   ModuleTurbulence          Do not have               From File                 ************                                                 YES
+ TIME_SERIE                ModuleTurbulence          FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_PROFILE            ModuleTurbulence          FALSE                     From File                 FALSE                                                        YES
+ PRESSURE_CORRECTION       ModuleWaterProperties     TRUE                      From File                 TRUE                                                         YES
+ MLD                       ModuleTurbulence          FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_TIME               Unknown Client            Do not have               From File                                                                              YES
+ RESTART_FILE_OUTPUT_TIME  Unknown Client            Do not have               From File                                                                              YES
+ RESTART_FILE_OVERWRITE    Turbulence                TRUE                      From File                 TRUE                                                         YES
+ READ_CONTINUOUS_FORMAT    Turbulence                1                         From File                 1                                                            YES
+ WRITE_CONTINUOUS_FORMAT   Turbulence                1                         From File                 1                                                            YES
+ CONTINUOUS_FORMAT         Turbulence                1                         From File                 1                                                            YES
+ WAVE_BREAKING             ModuleTurbulence          FALSE                     From File                 FALSE                                                        YES
+ VISH_MAX                  ModuleTurbulence          9.900000000000000E+015    From File                 9.900000000000000E+015                                       YES
+ OUTPUT_WAVE_SURFACE_FLUX_ ModuleTurbulence          FALSE                     From File                 FALSE                                                        YES
+ VISCOSITY_H               ModuleTurbulence          Do not have               From File                 0.000000000000000E+000                                       YES
+ PRANDTL_0                 ModuleTurbulence          1.00000000000000          From File                 1.00000000000000                                             YES
+ VISCOSITY_V               ModuleTurbulence          Do not have               From File                 0.000000000000000E+000                                       YES
+ MIXLENGTH_V               ModuleTurbulence          10.0000000000000          From File                 10.0000000000000                                             YES
+ Background_Viscosity      ModuleTurbulence          1.300000000000000E-006    From File                 1.300000000000000E-006                                       YES
+ MAX_VISC_VERT             ModuleTurbulence          10.0000000000000          From File                 10.0000000000000                                             YES
+ CONST_MIXING_LENGTH_HORIZ ModuleTurbulence          Do not have               From File                 -9.900000000000000E+015                                      YES
+ NYQUIST                   ModuleTurbulence          2.00000000000000          From File                 2.00000000000000                                             YES
+ IN_DAD3D                  Unknown Client            Do not have               From File                 ../data/Hydrodynamic_1.dat                                   YES
+ OUT_DESF                  Unknown Client            Do not have               From File                 ../res/Hydrodynamic_1.hdf                                    YES
+ OUT_FIN                   Unknown Client            Do not have               From File                 ../res/Hydrodynamic_1.fin                                    YES
+ IN_CNDI                   Unknown Client            Do not have               From File                 ************                                                 YES
+ ROOT_SRT                  Unknown Client            Do not have               From File                 ../res/Run1/                                                 YES
+ BAROCLINIC                ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ CONTINUOUS                ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ READ_CONTINUOUS_FORMAT    ModuleHydrodynamic        1                         From File                 1                                                            YES
+ WRITE_CONTINUOUS_FORMAT   ModuleHydrodynamic        1                         From File                 1                                                            YES
+ CONTINUOUS_FORMAT         ModuleHydrodynamic        1                         From File                 1                                                            YES
+ TIDE                      ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ ENTERING_WAVE             ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ RADIATION                 ModuleHydrodynamic        0                         From File                 0                                                            YES
+ WATER_DISCHARGES          ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ RESIDUAL                  ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ RESTART_RESIDUAL          ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ ENERGY                    ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ UP_CENTER                 ModuleHydrodynamic        1.00000000000000          From File                 1.00000000000000                                             YES
+ IMPLICIT_VERTADVECTION    ModuleHydrodynamic        1.00000000000000          From File                 1.00000000000000                                             YES
+ IMPLICIT_VERTCONVECTION   ModuleHydrodynamic        1.00000000000000          From File                 1.00000000000000                                             YES
+ IMPLICIT_VERTDIFFUSION    ModuleHydrodynamic        1.00000000000000          From File                 1.00000000000000                                             YES
+ DISCRETIZATION            ModuleHydrodynamic        2.00000000000000          From File                 2.00000000000000                                             YES
+ UPSTREAM                  ModuleHydrodynamic        Upwind                    From File                 Upwind                                                       YES
+ TIME_SERIE                ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_PROFILE            ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_WATER_LEVEL_UNITS  ModuleHydrodynamic        1                         From File                 1                                                            YES
+ OUTPUT_FLOOD_RISK         ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ EVOLUTION                 ModuleHydrodynamic        Solve_Equations           From File                 Solve_Equations                                              YES
+ CORIOLIS                  ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ VOLUMEVARIATION           ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ HORIZONTALADVECTION       ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ HORIZONTALCONVECTION      ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ HORIZONTALDIFFUSION       ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ INITIAL_ELEVATION         ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ INITIAL_ELEVATION_VALUE   ModuleHydrodynamic        0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ INITIAL_VEL_U             ModuleHydrodynamic        0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ INITIAL_VEL_V             ModuleHydrodynamic        0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ VERTICALADVECTION         ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ VERTICALCONVECTION        ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ VERTICALDIFFUSION         ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ VELTANGENTIALBOUNDARY     ModuleHydrodynamic        2                         From File                 2                                                            YES
+ VELNORMALBOUNDARY         ModuleHydrodynamic        2                         From File                 2                                                            YES
+ NULL_BOUND_HORADV         ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ NULL_BOUND_HORCONV        ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ TIDEPOTENTIAL             ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ ATM_RAMP                  ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ ATM_PERIOD                ModuleHydrodynamic        86400.0000000000          From File                 86400.0000000000                                             YES
+ IMPOSE_INVERTED_BAROMETER ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ INVERTED_BAROMETER_COEF   ModuleHydrodynamic        1.00000000000000          From File                 1.00000000000000                                             YES
+ INVERTED_BAROMETER_REF_AT ModuleHydrodynamic        101325.000000000          From File                 101325.000000000                                             YES
+ WIND                      ModuleHydrodynamic        0                         From File                 0                                                            YES
+ WIND_SMOOTH_PERIOD        ModuleHydrodynamic        86400.0000000000          From File                 86400.0000000000                                             YES
+ ATM_PRESSURE              ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SURFACEWATERFLUX          ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ HMIN_CHEZY                ModuleHydrodynamic        0.100000000000000         From File                 0.100000000000000                                            YES
+ VMIN_CHEZY                ModuleHydrodynamic        0.100000000000000         From File                 0.100000000000000                                            YES
+ DATA_ASSIMILATION         ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ WATERLEVEL_MAX_MIN        ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ ALTIMETRIC_ASSIMILATION   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ GEOST_INITIALIZATION      ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ LEVEL_BOTTOM_ANOMALY      ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ RECORDING                 ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ MOMENTUM_DISCHARGE        ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SLOWSTART                 ModuleHydrodynamic        0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ HMIN_ADVECTION            ModuleHydrodynamic        0.500000000000000         From File                 0.500000000000000                                            YES
+ HMIN_CONVECTION           ModuleHydrodynamic        0.500000000000000         From File                 0.500000000000000                                            YES
+ LOCAL_DENSITY             ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ CYCLIC_BOUNDARY           ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ CONSERVATIVE_HOR_DIF      ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ BIHARMONIC                ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SUBMODEL                  ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SUBMODEL_FATHER_HOT_START ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ MISSING_NULL              ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SUBMODEL_EXTRAPOLATE      ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ DEADZONE                  ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ DEADZONE_FILE             ModuleHydrodynamic        ******.***                From File                 ******.***                                                   YES
+ MOMENTUM_CONSERV          ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ BOTTOMVISC_LIM            ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ BAROCLINIC_RADIATION      ModuleHydrodynamic        0                         From File                 0                                                            YES
+ LOCAL_SOLUTION            ModuleHydrodynamic        1                         From File                 1                                                            YES
+ CORRECT_WATERLEVEL        ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ MIN_WATERLEVEL            ModuleHydrodynamic        0.000000000000000E+000    From File                 0.000000000000000E+000                                       YES
+ BOTTOMWATERFLUX           ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SLIPPING_CONDITION        ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ NONHYDROSTATIC            ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ WATERCOLUMN2D             ModuleHydrodynamic        -9.900000000000000E+015   From File                 -9.900000000000000E+015                                      YES
+ WAVE_STRESS               ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ WAVE_FORCING_3D           ModuleHydrodynamic        0                         From File                 0                                                            YES
+ OBSTACLE                  ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ CENTRIFUGAL               ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ ADV_METHOD_H              ModuleHydrodynamic        1                         From File                 1                                                            YES
+ ADV_METHOD_V              ModuleHydrodynamic        1                         From File                 1                                                            YES
+ TVD_LIMIT_H               ModuleHydrodynamic        4                         From File                 4                                                            YES
+ TVD_LIMIT_V               ModuleHydrodynamic        4                         From File                 4                                                            YES
+ VOLUME_RELATION_MAX       ModuleHydrodynamic        1.30000000000000          From File                 1.30000000000000                                             YES
+ BAROCLINIC_METHOD         ModuleHydrodynamic        3                         From File                 3                                                            YES
+ BAROCLINIC_POLIDEGREE     ModuleHydrodynamic        1                         From File                 1                                                            YES
+ NH_RESIDUAL               ModuleHydrodynamic        1.000000000000000E-006    From File                 1.000000000000000E-006                                       YES
+ NH_MAXIT                  ModuleHydrodynamic        500                       From File                 500                                                          YES
+ NH_NORMALIZED_RESIDUAL    ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ NH_ALPHA_LU               ModuleHydrodynamic        0.500000000000000         From File                 0.500000000000000                                            YES
+ PRESSURE_CORRECTION       ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SURFACE_BOUNDARY_HYDROSTA ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ VERTICAL_AXISYMMETRIC     ModuleHydrodynamic        0                         From File                 0                                                            YES
+ XZ_FLOW                   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SCRAPER                   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ SCRAPER_TIME_SCALE        ModuleHydrodynamic        36000.0000000000          From File                 36000.0000000000                                             YES
+ THIN_WALLS                ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ COMPUTE_EMERSION_TIME     ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ NULL_WATER_LEVEL_GRAD_I   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ NULL_WATER_LEVEL_GRAD_J   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ TWO_WAY                   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ TIDE_STATE_ON             ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ TURBINE                   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ OPERATIONAL_MODEL_DEFAULT ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_TIME               Unknown Client            Do not have               From File                                                                              YES
+ RESTART_FILE_OUTPUT_TIME  Unknown Client            Do not have               From File                                                                              YES
+ RESTART_FILE_OVERWRITE    ModuleWaterProperties     TRUE                      From File                 TRUE                                                         YES
+ SURFACE_OUTPUT_TIME       Unknown Client            Do not have               From File                                                                              YES
+ OUTPUT_FACES              ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ SIMPLE_WINDOW_OUTPUT      ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ SIMPLE_OUTPUT             ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ OUTPUT_HDF_REAL4          ModuleHydrodynamic        TRUE                      From File                 TRUE                                                         YES
+ STATISTICS                ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ STATISTICS_2D             ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ BOXFLUXES                 ModuleHydrodynamic        ******.***                From File                 ******.***                                                   YES
+ WIND_WAVES_CELERITY_TYPE  ModuleHydrodynamic        0                         From File                 0                                                            YES
+ TSUNAMI                   ModuleHydrodynamic        FALSE                     From File                 FALSE                                                        YES
+ DISPQUAL                  Unknown Client            Do not have               From File                 ../data/WaterProperties_1.dat                                YES
+ EUL_HDF                   Unknown Client            Do not have               From File                 ../res/WaterProperties_1.hdf                                 YES
+ EUL_FIN                   Unknown Client            Do not have               From File                 ../res/WaterProperties_1.fin                                 YES
+ EUL_INI                   Unknown Client            Do not have               From File                 ************                                                 YES
+ ROOT                      Unknown Client            Do not have               From File                 ../res/                                                      YES
+ PHREEQC_ONLY_START        ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ CONTINUOUS                ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ NO_FLUX_INTERIOR_CONDITIO ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ NAME                      Unknown Client            Do not have               From Block                salinity                                                     YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block                FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block                psu                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block                salinity                                                     YES
+ IS_COEF                   ModuleWaterProperties     1.000000000000000E-003    From Block                1.000000000000000E-003                                       YES
+ NON_COHESIVE              ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ GFW                       ModuleWaterProperties     9.900000000000000E+015    From Block                9.900000000000000E+015                                       YES
+ OLD                       ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ MIN_VALUE                 ModuleWaterProperties     -9.900000000000000E+015   From Block                -9.900000000000000E+015                                      YES
+ MAX_VALUE                 ModuleWaterProperties     9.900000000000000E+015    From Block                9.900000000000000E+015                                       YES
+ WARN_ON_NEGATIVE_VALUES   ModuleWaterProperties     Do not have               From Block                FALSE                                                        YES
+ ADD_OFFSET                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DEFAULTBOUNDARY           ModuleWaterProperties     Do not have               From Block                -9.900000000000000E+015                                      YES
+ DRY_CELL_CONCENTRATION    ModuleWaterProperties     -9.900000000000000E+015   From Block                -9.900000000000000E+015                                      YES
+ FILE_IN_TIME              ModuleFillMatrix          None                      From Block                NONE                                                         YES
+ INITIALIZATION_METHOD     ModuleFillMatrix          Constant                  From Block                CONSTANT                                                     YES
+ REMAIN_CONSTANT           ModuleFillMatrix          FALSE                     From Block                TRUE                                                         YES
+ INITIALIZATION_DEFAULT    ModuleFillMatrix          Constant                  From Block                Constant                                                     YES
+ DEFAULTVALUE              ModuleFillMatrix          -9.900000000000000E+015   From Block                36.0000000000000                                             YES
+ INTERPOLATE_VALUES        ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ ACCUMULATE_VALUES         ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ USE_ORIGINAL_VALUES       ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ VALUES_TYPE               ModuleFillMatrix          1                         From Block                1                                                            YES
+ NO_INTERPOLATION_OR_ACCUM ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ NO_INTERPOLATION          ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ MIN_FOR_DT_DECREASE       ModuleFillMatrix          1.000000000000000E-015    From Block                1.000000000000000E-015                                       YES
+ PREVIOUS_INSTANT_VALUES   ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ IGNORE_NODATA_POINT       ModuleFillMatrix          TRUE                      From Block                TRUE                                                         YES
+ PREDICT_DT_METHOD         ModuleFillMatrix          1                         From Block                1                                                            YES
+ BOUNDARY_INITIALIZATION   ModuleWaterProperties     INTERIOR                  From Block                INTERIOR                                                     YES
+ SUBMODEL                  ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SUBMODEL_INI              ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SUBMODEL_EXTRAPOLATE      ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ TWO_WAY                   ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ ADVECTION_DIFFUSION       ModuleWaterProperties     TRUE                      From Block                FALSE                                                        YES
+ INSTANT_MIXING            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ WATER_QUALITY             ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ MACROALGAE                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SEAGRLEAVES               ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ CEQUALW2                  ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ LIFE                      ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ BIVALVE                   ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ WWTPQ                     ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ PHREEQC                   ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ PARTITION                 ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DISCHARGES                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DISCHARGES_TRACKING       ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ VERTICAL_MOVEMENT         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SURFACE_FLUXES            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ BOTTOM_FLUXES             ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DATA_ASSIMILATION         ModuleWaterProperties     0                         From Block                0                                                            YES
+ LIGHT_EXTINCTION          ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ FILTRATION                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ LAG_SINKS_SOURCES         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ FIRST_ORDER_DECAY         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DECAY_RATE_PROPERTY       ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ REINITIALIZE              ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_HDF                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_HDF_REAL4          ModuleWaterProperties     TRUE                      From Block                TRUE                                                         YES
+ OUTPUT_SURFACE_HDF        ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ TIME_SERIE                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_PROFILE            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ BOX_TIME_SERIE            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ STATISTICS                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_HDF_SEDVEL         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ NAME                      Unknown Client            Do not have               From Block                temperature                                                  YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block                FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block                ºC                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block                temperature                                                  YES
+ IS_COEF                   ModuleWaterProperties     1.000000000000000E-003    From Block                1.000000000000000E-003                                       YES
+ NON_COHESIVE              ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ GFW                       ModuleWaterProperties     9.900000000000000E+015    From Block                9.900000000000000E+015                                       YES
+ OLD                       ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ MIN_VALUE                 ModuleWaterProperties     -9.900000000000000E+015   From Block                -9.900000000000000E+015                                      YES
+ MAX_VALUE                 ModuleWaterProperties     9.900000000000000E+015    From Block                9.900000000000000E+015                                       YES
+ WARN_ON_NEGATIVE_VALUES   ModuleWaterProperties     Do not have               From Block                FALSE                                                        YES
+ ADD_OFFSET                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DEFAULTBOUNDARY           ModuleWaterProperties     Do not have               From Block                -9.900000000000000E+015                                      YES
+ DRY_CELL_CONCENTRATION    ModuleWaterProperties     -9.900000000000000E+015   From Block                -9.900000000000000E+015                                      YES
+ FILE_IN_TIME              ModuleFillMatrix          None                      From Block                NONE                                                         YES
+ INITIALIZATION_METHOD     ModuleFillMatrix          Constant                  From Block                CONSTANT                                                     YES
+ REMAIN_CONSTANT           ModuleFillMatrix          FALSE                     From Block                TRUE                                                         YES
+ INITIALIZATION_DEFAULT    ModuleFillMatrix          Constant                  From Block                Constant                                                     YES
+ DEFAULTVALUE              ModuleFillMatrix          -9.900000000000000E+015   From Block                16.0000000000000                                             YES
+ INTERPOLATE_VALUES        ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ ACCUMULATE_VALUES         ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ USE_ORIGINAL_VALUES       ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ VALUES_TYPE               ModuleFillMatrix          1                         From Block                1                                                            YES
+ NO_INTERPOLATION_OR_ACCUM ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ NO_INTERPOLATION          ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ MIN_FOR_DT_DECREASE       ModuleFillMatrix          1.000000000000000E-015    From Block                1.000000000000000E-015                                       YES
+ PREVIOUS_INSTANT_VALUES   ModuleFillMatrix          FALSE                     From Block                FALSE                                                        YES
+ IGNORE_NODATA_POINT       ModuleFillMatrix          TRUE                      From Block                TRUE                                                         YES
+ PREDICT_DT_METHOD         ModuleFillMatrix          1                         From Block                1                                                            YES
+ BOUNDARY_INITIALIZATION   ModuleWaterProperties     INTERIOR                  From Block                INTERIOR                                                     YES
+ SUBMODEL                  ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SUBMODEL_INI              ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SUBMODEL_EXTRAPOLATE      ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ TWO_WAY                   ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ ADVECTION_DIFFUSION       ModuleWaterProperties     TRUE                      From Block                FALSE                                                        YES
+ INSTANT_MIXING            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ WATER_QUALITY             ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ MACROALGAE                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SEAGRLEAVES               ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ CEQUALW2                  ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ LIFE                      ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ BIVALVE                   ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ WWTPQ                     ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ PHREEQC                   ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ PARTITION                 ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DISCHARGES                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DISCHARGES_TRACKING       ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ VERTICAL_MOVEMENT         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ SURFACE_FLUXES            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ BOTTOM_FLUXES             ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DATA_ASSIMILATION         ModuleWaterProperties     0                         From Block                0                                                            YES
+ LIGHT_EXTINCTION          ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ FILTRATION                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ LAG_SINKS_SOURCES         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ FIRST_ORDER_DECAY         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ DECAY_RATE_PROPERTY       ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ REINITIALIZE              ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_HDF                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_HDF_REAL4          ModuleWaterProperties     TRUE                      From Block                TRUE                                                         YES
+ OUTPUT_SURFACE_HDF        ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ TIME_SERIE                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_PROFILE            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ BOX_TIME_SERIE            ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ STATISTICS                ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ OUTPUT_HDF_SEDVEL         ModuleWaterProperties     FALSE                     From Block                FALSE                                                        YES
+ REFERENCE_DENSITY         ModuleWaterProperties     1000.00000000000          From File                 1000.00000000000                                             YES
+ DENSITY_METHOD            ModuleWaterProperties     2                         From File                 2                                                            YES
+ PRESSURE_CORRECTION       ModuleWaterProperties     TRUE                      From File                 TRUE                                                         YES
+ SEDIMENT_CORRECTION       ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ DENSITY_COHESIVE_SED      ModuleWaterProperties     2650.00000000000          From File                 2650.00000000000                                             YES
+ NONCOHESIVE_CORRECTION    ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ DENSITY_NONCOHESIVE_SED   ModuleWaterProperties     2650.00000000000          From File                 2650.00000000000                                             YES
+ REFERENCE_SPECIFICHEAT    ModuleWaterProperties     4200.00000000000          From File                 4200.00000000000                                             YES
+ SPECIFICHEAT_METHOD       ModuleWaterProperties     3                         From File                 3                                                            YES
+ RESTART_FILE_OUTPUT_TIME  Unknown Client            Do not have               From File                                                                              YES
+ RESTART_FILE_OVERWRITE    ModuleWaterProperties     TRUE                      From File                 TRUE                                                         YES
+ SIMPLE_WINDOW_OUTPUT      ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ SIMPLE_OUTPUT             ModuleWaterProperties     FALSE                     From File                 FALSE                                                        YES
+ DOSAT_TYPE                ModuleWaterProperties     1                         From File                 1                                                            YES
+ ALTIMETRIC_ASSIMILATION   ModuleWaterProperties     0                         From File                 0                                                            YES
+ PARTIC_DATA               Unknown Client            Do not have               From File                 ../data/Lagrangian_1.dat                                     YES
+ PARTIC_HDF                Unknown Client            Do not have               From File                 ../res/Lagrangian_1.hdf                                      YES
+ PARTIC_FIN                Unknown Client            Do not have               From File                 ../res/Lagrangian_1.fin                                      YES
+ PARTIC_INI                Unknown Client            Do not have               From File                 ************                                                 YES
+ ROOT                      Unknown Client            Do not have               From File                 ../res/                                                      YES
+ OUTPUT_TIME               Unknown Client            Do not have               From File                 0.000000000000000E+000   3600.00000000000                    YES
+ RESTART_FILE_OUTPUT_TIME  Unknown Client            Do not have               From File                                                                              YES
+ RESTART_FILE_OVERWRITE    ModuleLagrangianGlobal    TRUE                      From File                 TRUE                                                         YES
+ OUTPUT_CONC               ModuleLagrangianGlobal    1                         From File                 1                                                            YES
+ OUTPUT_MAX_TRACER         ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_MASS_TRACER        ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ OUTPUT_ORIGIN_ENVELOPE    ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ WRITE_DUMMY_PART          ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ EXPORT_ARRIVAL_BEACH_TIME ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ ROOT_SRT                  Unknown Client            Do not have               From File                 ../res/Run1/                                                 YES
+ DT_PARTIC                 ModuleLagrangianGlobal    Do not have               From File                 600.000000000000                                             YES
+ VERT_STEPS                ModuleLagrangianGlobal    1                         From File                 1                                                            YES
+ OUTPUT_TRACER_INFO        ModuleLagrangianGlobal    FALSE                     From File                 TRUE                                                         YES
+ PARTIC_BOX                ModuleLagrangianGlobal    Do not have               From File                 ************                                                 YES
+ MONITOR_BOX               ModuleLagrangianGlobal    Do not have               From File                 ************                                                 YES
+ EULERIAN_MONITOR_BOX      ModuleLagrangianGlobal    Do not have               From File                 ************                                                 YES
+ ASSOCIATE_BEACH_PROB      ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ NEAR_COAST_DISTANCE       ModuleLagrangianGlobal    500.000000000000          From File                 500.000000000000                                             YES
+ OVERLAY_VELOCITY          ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ COASTLINE_FILE            ModuleLagrangianGlobal    Do not have               From File                 ************                                                 YES
+ THINWALLS_FILE            ModuleLagrangianGlobal    Do not have               From File                 ../../GeneralData/polygons/Land/linhadecostaprsc.xy          YES
+ BEACH_AREA_FILE           ModuleLagrangianGlobal    Do not have               From File                 ************                                                 YES
+ NEW_GRID_CENTER           ModuleLagrangianGlobal    Do not have               From File                                                                              YES
+ RUN_ONLINE                ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ IGNORE_ON                 ModuleLagrangianGlobal    FALSE                     From File                 TRUE                                                         YES
+ COMPUTE_AVERAGE_POSITION  ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ VORONOI_VOLUME            ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ STOP_WITH_NO_PART         ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ LITTER_ON                 ModuleLagrangianGlobal    FALSE                     From File                 FALSE                                                        YES
+ ORIGIN_NAME               ModuleLagrangianGlobal    Do not have               From Block                Spill                                                        YES
+ DEFAULT                   ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ EMISSION_SPATIAL          ModuleLagrangianGlobal    Do not have               From Block                Point                                                        YES
+ POSITION_COORDINATES      ModuleLagrangianGlobal    Do not have               From Block                -40.4300000000000      -0.352000000000000                    YES
+ DEFAULT                   ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ ORIGIN_NAME               ModuleLagrangianGlobal    Do not have               From Block                Spill                                                        YES
+ OLD                       ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ GROUP_ID                  ModuleLagrangianGlobal    1                         From Block                1                                                            YES
+ EMISSION_SPATIAL          ModuleLagrangianGlobal    Do not have               From Block                Point                                                        YES
+ EMISSION_TEMPORAL         ModuleLagrangianGlobal    Do not have               From Block                Continuous                                                   YES
+ EMISSION_ON               ModuleLagrangianGlobal    TRUE                      From Block                TRUE                                                         YES
+ DT_EMIT                   ModuleLagrangianGlobal    600.000000000000          From Block                600.000000000000                                             YES
+ EMISSION_DURATION         ModuleLagrangianGlobal    -9.900000000000000E+015   From Block                -9.900000000000000E+015                                      YES
+ START_PARTIC_EMIT         ModuleLagrangianGlobal    2022.00000000000        3 From Block                2022.00000000000        3.00000000000000        30.000000000 YES
+ STOP_PARTIC_EMIT          ModuleLagrangianGlobal    2022.00000000000        4 From Block                2022.00000000000        4.00000000000000        1.0000000000 YES
+ FLOW_VARIABLE             ModuleLagrangianGlobal    Do not have               From Block                FALSE                                                        YES
+ FLOW                      ModuleLagrangianGlobal    Do not have               From Block                1.00000000000000                                             YES
+ MOVING_ORIGIN             ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ TVOL200                   ModuleLagrangianGlobal    Do not have               From Block                -9.900000000000000E+015                                      YES
+ SPLIT_PART                ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ VOLFAC                    ModuleLagrangianGlobal    10.0000000000000          From Block                10.0000000000000                                             YES
+ VOLUME_INCREASE           ModuleLagrangianGlobal    Double                    From Block                Double                                                       YES
+ FLOAT                     ModuleLagrangianGlobal    FALSE                     From Block                TRUE                                                         YES
+ COMPUTE_BUOYANCY          ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ MOVEMENT                  ModuleLagrangianGlobal    Do not have               From Block                SullivanAllen                                                YES
+ VARVELHX                  ModuleLagrangianGlobal    0.200000000000000         From Block                5.000000000000000E-002                                       YES
+ VARVELH                   ModuleLagrangianGlobal    0.000000000000000E+000    From Block                1.000000000000000E-002                                       YES
+ TURB_V                    ModuleLagrangianGlobal    Do not have               From Block                Constant                                                     YES
+ VARVELVX                  ModuleLagrangianGlobal    0.000000000000000E+000    From Block                0.000000000000000E+000                                       YES
+ VARVELV                   ModuleLagrangianGlobal    0.000000000000000E+000    From Block                0.000000000000000E+000                                       YES
+ TURB_GRADIENT_K           ModuleLagrangianGlobal    TRUE                      From Block                TRUE                                                         YES
+ ADVECTION                 ModuleLagrangianGlobal    TRUE                      From Block                TRUE                                                         YES
+ ADVECTION_Z               ModuleLagrangianGlobal    TRUE                      From Block                FALSE                                                        YES
+ KILL_LAND_PARTICLES       ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ STOKES_DRIFT              ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ WINDCOEF                  ModuleLagrangianGlobal    3.000000000000000E-002    From Block                3.000000000000000E-002                                       YES
+ WINDDRIFTCORRECTION       ModuleLagrangianGlobal    0                         From Block                1                                                            YES
+ WINDDRIFTANGLE            ModuleLagrangianGlobal    0.000000000000000E+000    From Block                -45.0000000000000                                            YES
+ WINDXY                    ModuleLagrangianGlobal    Do not have               From Block                                                                             YES
+ SLIP_CONDITION            ModuleLagrangianGlobal    TRUE                      From Block                TRUE                                                         YES
+ SEDIMENTATION             ModuleLagrangianGlobal    Do not have               From Block                ************                                                 YES
+ DEPOSITION                ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ MIN_SED_VELOCITY          ModuleLagrangianGlobal    0.000000000000000E+000    From Block                0.000000000000000E+000                                       YES
+ NBR_PARTIC                ModuleLagrangianGlobal    1                         From Block                1                                                            YES
+ SURFACE_EMISSION          ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ POSITION_COORDINATES      ModuleLagrangianGlobal    Do not have               From Block                -40.4300000000000      -0.352000000000000                    YES
+ FIND_WATER_LOCATION       ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ DEPTH_FROM_FREE_SURFACE   ModuleLagrangianGlobal    Do not have               From Block                0.000000000000000E+000                                       YES
+ MAINTAIN_DEPTH            ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ MAINTAIN_RELATIVE_POSITIO ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ SECTION_EMISSION          ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ COMPUTE_PLUME             ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ COMPUTE_AGE               ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ ACCIDENT_PROBABILITY      ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ BEACHING                  ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ BEACH_REMOVAL             ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ COASTLINE_BEACHING        ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ AREA_BEACHING             ModuleLagrangianGlobal    FALSE                     From Block                FALSE                                                        YES
+ ROOT_SRT                  Unknown Client            Do not have               From File                 ../res/Run1/                                                 YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity U                                                   YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block In Block       FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       velocity from operational models                             YES
+ MASK_DIM                  ModuleLagrangianGlobal    2                         From Block In Block       -99                                                          YES
+ FILE_LIST_MODE            ModuleLagrangianGlobal    FALSE                     From Block In Block       TRUE                                                         YES
+ LONG_GRID                 ModuleField4D             Longitude                 From Block In Block       Longitude                                                    YES
+ LAT_GRID                  ModuleField4D             Latitude                  From Block In Block       Latitude                                                     YES
+ DEPTH_GRID                ModuleField4D             VerticalZ                 From Block In Block       VerticalZ                                                    YES
+ BATHYM_GRID               ModuleField4D             Bathymetry                From Block In Block       Bathymetry                                                   YES
+ MASK_GRID                 ModuleField4D             WaterPoints3D             From Block In Block       WaterPoints3D                                                YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity U                                                   YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block In Block       FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       velocity from operational models                             YES
+ DEFAULTVALUE              ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ VALUES_TYPE               ModuleField4D             1                         From Block In Block       1                                                            YES
+ MIN_FOR_DT_DECREASE       ModuleField4D             1.000000000000000E-015    From Block In Block       1.000000000000000E-015                                       YES
+ 4D                        ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ VGROUP_PATH               ModuleField4D             /Results                  From Block In Block       /Results                                                     YES
+ MULTIPLYING_FACTOR        ModuleField4D             1.00000000000000          From Block In Block       1.00000000000000                                             YES
+ ADDING_FACTOR             ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ FIELD_NAME                ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ HDF_FIELD_NAME            ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ LAST_GROUP_EQUAL_FIELD    ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ FROM_2D_TO_3D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ FROM_3D_TO_2D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ OUTPUT_TIME               Unknown Client            Do not have               From Block In Block                                                                    YES
+ HARMONICS                 ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ SPACE_DIM                 ModuleField4D             3                         From Block In Block       3                                                            YES
+ CHANGE_IN_TIME            ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ MIN_VALUE                 ModuleField4D             -9.900000000000000E+015   From Block In Block       -9.900000000000000E+015                                      YES
+ MAX_VALUE                 ModuleField4D             9.900000000000000E+015    From Block In Block       9.900000000000000E+015                                       YES
+ EXTRAPOLATE               ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ EXTRAPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ INTERPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ Z_DEPTHS                  ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ DISCARD_FILLVALUES        ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ LONG_GRID                 ModuleField4D             Longitude                 From Block In Block       Longitude                                                    YES
+ LAT_GRID                  ModuleField4D             Latitude                  From Block In Block       Latitude                                                     YES
+ DEPTH_GRID                ModuleField4D             VerticalZ                 From Block In Block       VerticalZ                                                    YES
+ BATHYM_GRID               ModuleField4D             Bathymetry                From Block In Block       Bathymetry                                                   YES
+ MASK_GRID                 ModuleField4D             WaterPoints3D             From Block In Block       WaterPoints3D                                                YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity U                                                   YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block In Block       FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       velocity from operational models                             YES
+ DEFAULTVALUE              ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ VALUES_TYPE               ModuleField4D             1                         From Block In Block       1                                                            YES
+ MIN_FOR_DT_DECREASE       ModuleField4D             1.000000000000000E-015    From Block In Block       1.000000000000000E-015                                       YES
+ 4D                        ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ VGROUP_PATH               ModuleField4D             /Results                  From Block In Block       /Results                                                     YES
+ MULTIPLYING_FACTOR        ModuleField4D             1.00000000000000          From Block In Block       1.00000000000000                                             YES
+ ADDING_FACTOR             ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ FIELD_NAME                ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ HDF_FIELD_NAME            ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ LAST_GROUP_EQUAL_FIELD    ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ FROM_2D_TO_3D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ FROM_3D_TO_2D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ OUTPUT_TIME               Unknown Client            Do not have               From Block In Block                                                                    YES
+ HARMONICS                 ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ SPACE_DIM                 ModuleField4D             3                         From Block In Block       3                                                            YES
+ CHANGE_IN_TIME            ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ MIN_VALUE                 ModuleField4D             -9.900000000000000E+015   From Block In Block       -9.900000000000000E+015                                      YES
+ MAX_VALUE                 ModuleField4D             9.900000000000000E+015    From Block In Block       9.900000000000000E+015                                       YES
+ EXTRAPOLATE               ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ EXTRAPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ INTERPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ Z_DEPTHS                  ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ DISCARD_FILLVALUES        ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ LONG_GRID                 ModuleField4D             Longitude                 From Block In Block       Longitude                                                    YES
+ LAT_GRID                  ModuleField4D             Latitude                  From Block In Block       Latitude                                                     YES
+ DEPTH_GRID                ModuleField4D             VerticalZ                 From Block In Block       VerticalZ                                                    YES
+ BATHYM_GRID               ModuleField4D             Bathymetry                From Block In Block       Bathymetry                                                   YES
+ MASK_GRID                 ModuleField4D             WaterPoints3D             From Block In Block       WaterPoints3D                                                YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity U                                                   YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block In Block       FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       velocity from operational models                             YES
+ DEFAULTVALUE              ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ VALUES_TYPE               ModuleField4D             1                         From Block In Block       1                                                            YES
+ MIN_FOR_DT_DECREASE       ModuleField4D             1.000000000000000E-015    From Block In Block       1.000000000000000E-015                                       YES
+ 4D                        ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ VGROUP_PATH               ModuleField4D             /Results                  From Block In Block       /Results                                                     YES
+ MULTIPLYING_FACTOR        ModuleField4D             1.00000000000000          From Block In Block       1.00000000000000                                             YES
+ ADDING_FACTOR             ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ FIELD_NAME                ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ HDF_FIELD_NAME            ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ LAST_GROUP_EQUAL_FIELD    ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ FROM_2D_TO_3D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ FROM_3D_TO_2D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ OUTPUT_TIME               Unknown Client            Do not have               From Block In Block                                                                    YES
+ HARMONICS                 ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ SPACE_DIM                 ModuleField4D             3                         From Block In Block       3                                                            YES
+ CHANGE_IN_TIME            ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ MIN_VALUE                 ModuleField4D             -9.900000000000000E+015   From Block In Block       -9.900000000000000E+015                                      YES
+ MAX_VALUE                 ModuleField4D             9.900000000000000E+015    From Block In Block       9.900000000000000E+015                                       YES
+ EXTRAPOLATE               ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ EXTRAPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ INTERPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ Z_DEPTHS                  ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ DISCARD_FILLVALUES        ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ LONG_GRID                 ModuleField4D             Longitude                 From Block In Block       Longitude                                                    YES
+ LAT_GRID                  ModuleField4D             Latitude                  From Block In Block       Latitude                                                     YES
+ DEPTH_GRID                ModuleField4D             VerticalZ                 From Block In Block       VerticalZ                                                    YES
+ BATHYM_GRID               ModuleField4D             Bathymetry                From Block In Block       Bathymetry                                                   YES
+ MASK_GRID                 ModuleField4D             WaterPoints3D             From Block In Block       WaterPoints3D                                                YES
+ NAME                      Unknown Client            Do not have               From Block In Block       velocity U                                                   YES
+ DYNAMIC                   Unknown Client            FALSE                     From Block In Block       FALSE                                                        YES
+ UNITS                     Unknown Client            Do not have               From Block In Block       m/s                                                          YES
+ DESCRIPTION               Unknown Client            Do not have               From Block In Block       velocity from operational models                             YES
+ DEFAULTVALUE              ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ VALUES_TYPE               ModuleField4D             1                         From Block In Block       1                                                            YES
+ MIN_FOR_DT_DECREASE       ModuleField4D             1.000000000000000E-015    From Block In Block       1.000000000000000E-015                                       YES
+ 4D                        ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ VGROUP_PATH               ModuleField4D             /Results                  From Block In Block       /Results                                                     YES
+ MULTIPLYING_FACTOR        ModuleField4D             1.00000000000000          From Block In Block       1.00000000000000                                             YES
+ ADDING_FACTOR             ModuleField4D             0.000000000000000E+000    From Block In Block       0.000000000000000E+000                                       YES
+ FIELD_NAME                ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ HDF_FIELD_NAME            ModuleField4D             velocity U                From Block In Block       velocity U                                                   YES
+ LAST_GROUP_EQUAL_FIELD    ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ FROM_2D_TO_3D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ FROM_3D_TO_2D             ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ OUTPUT_TIME               Unknown Client            Do not have               From Block In Block                                                                    YES
+ HARMONICS                 ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ SPACE_DIM                 ModuleField4D             3                         From Block In Block       3                                                            YES
+ CHANGE_IN_TIME            ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES
+ MIN_VALUE                 ModuleField4D             -9.900000000000000E+015   From Block In Block       -9.900000000000000E+015                                      YES
+ MAX_VALUE                 ModuleField4D             9.900000000000000E+015    From Block In Block       9.900000000000000E+015                                       YES
+ EXTRAPOLATE               ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ EXTRAPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ INTERPOLATE_METHOD        ModuleField4D             1                         From Block In Block       1                                                            YES
+ Z_DEPTHS                  ModuleField4D             FALSE                     From Block In Block       FALSE                                                        YES
+ DISCARD_FILLVALUES        ModuleField4D             TRUE                      From Block In Block       TRUE                                                         YES

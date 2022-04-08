@@ -1,0 +1,126 @@
+ -------------------------- MOHID -------------------------
+ 
+       AUTHOR   : IST/MARETEC, Marine Modelling Group      
+       WWW      : http://www.mohid.com
+ 
+ 
+ Copyright (C) 1985, 1998, 2002, 2006.
+ Instituto Superior Tecnico, Technical University of Lisbon
+ -------------------------- MOHID -------------------------
+ 
+ Constructing Mohid Water
+ Please Wait...
+ -------------------------- MODEL -------------------------
+ 
+ Constructing      : BSO
+ ID                :            1
+ ---------------------- HYDRODYNAMICS ---------------------
+ 
+ Courant Number is :    10.2615027192786     
+ In Grid Cell[i,j] :            1           2
+ 
+ --------------------- WATERPROPERTIES --------------------
+ 
+ Num of Properties :            2
+ 
+ Property            : salinity
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  F
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ Property            : temperature
+ ---Water Quality    :  F
+ ---CEQUALW2         :  F
+ ---Life             :  F
+ ---MacroAlgae       :  F
+ ---Seagrasses       :  F
+ ---WWTPQ            :  F
+ ---Bivalve          :  F
+ ---Partitioning     :  F
+ ---Free Vert. Mov   :  F
+ ---Adv. Diff.       :  F
+ ---Discharges       :  F
+ ---Surface Fluxes   :  F
+ ---Bottom Fluxes    :  F
+ ---First Order Decay:  F
+ ---Decay Rate Property:  F
+ ---Assimilation     :            0
+ 
+ ----------------------- LAGRANGIAN -----------------------
+ 
+ Number of Origins :            1
+ Number of Groups  :            1
+ 
+ GroupID           :            1
+ ---Number of Orig.:            1
+ 
+ Origin            : Default
+ ---Group ID       :            1
+ ---Number of Part.:            1
+ ---Number of Prop.:            3
+ 
+ ---------------- INTERFACE SEDIMENT-WATER -----------------
+ 
+ Num of Properties :            0
+ 
+ 
+ Atmosphere DT Prediction Method:  1
+ 
+ -------------------------- MOHID -------------------------
+ 
+ Running MOHID, please wait...
+ 
+ -------------------------- MOHID -------------------------
+ 
+ Shuting down MOHID, please wait...
+ 
+ -----Current Simulation Instant---------------------------
+ Time Instant           : 2019: 9: 6: 0: 0: 0
+ 
+ -----CPU Time---------------------------------------------
+ Elapsed                :           11s
+ Remaining (aprox.)     :            0s
+ Completed (%)          :       100.0000
+ Coeficient CPU / Model :         0.0001
+ Seconds per Iteration  :         0.4601s
+ -----System Time------------------------------------------
+ System time            : 2019: 9:11: 7: 0:34
+ End of the run         : 2019: 9:11: 7: 0:34
+
+
+
+
+
+
+ -------------------------- MOHID -------------------------
+ 
+ Program Mohid Water successfully terminated
+ 
+ 
+ Total Elapsed Time     :          43.59   0h  0min 43s
+
+ Total CPU time         :          42.17
+
+ CPU usage (%)          :          96.76
+
+ Workcycle Elapsed Time :          11.06
+
+ Workcycle CPU time     :           9.84
+
+ Workcycle CPU usage (%):          89.02
+
+ 
+ ----------------------------------------------------------

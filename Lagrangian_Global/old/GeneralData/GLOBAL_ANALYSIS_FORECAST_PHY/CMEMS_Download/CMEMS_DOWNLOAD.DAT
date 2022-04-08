@@ -1,0 +1,13 @@
+START : 2019 09 05 00 00 00
+END : 2019 09 06 00 00 00
+
+your_user : gfranz
+your_password : Guilherme@CMEMS2015
+lon_min : -56.
+lon_max : -28.
+lat_min : -35
+lat_max : 10
+start_depth : 0.493
+end_depth : 0.4942
+your_output_directory : ..\CMEMS_Download
+your_output_file_name : CMEMS

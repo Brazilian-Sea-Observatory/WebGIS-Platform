@@ -1,0 +1,29 @@
+!OUTPUT_TIME               : 0 86400
+
+<beginproperty>
+NAME                      : salinity
+UNITS                     : psu
+DESCRIPTION               : salinity
+INITIALIZATION_METHOD     : CONSTANT
+FILE_IN_TIME              : NONE
+DEFAULTVALUE              : 36
+REMAIN_CONSTANT           : 1
+ADVECTION_DIFFUSION       : 0
+DISCHARGES                : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 0
+<endproperty>
+
+<beginproperty>
+NAME                      : temperature
+UNITS                     : ºC
+DESCRIPTION               : temperature
+INITIALIZATION_METHOD     : CONSTANT
+FILE_IN_TIME              : NONE
+DEFAULTVALUE              : 16
+REMAIN_CONSTANT           : 1
+ADVECTION_DIFFUSION       : 0
+DISCHARGES                : 0
+TIME_SERIE                : 0
+OUTPUT_HDF                : 0
+<endproperty>

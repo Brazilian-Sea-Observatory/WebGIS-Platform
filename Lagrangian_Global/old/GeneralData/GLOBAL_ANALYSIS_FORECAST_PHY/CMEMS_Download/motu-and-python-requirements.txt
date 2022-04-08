@@ -1,0 +1,13 @@
+http://marine.copernicus.eu/faq/what-are-the-motu-and-python-requirements/
+
+python --version
+
+# It should return: "Python 2.7.X" or "Python 3.X.X".
+
+python -m pip install motuclient
+
+# It should install and display the version of the motuclient package v1.8.1 as of October 2018. To make sure it's working as expected, display the help:
+
+python -m motuclient --help
+
+# If it does return an error, then follow the below workaround

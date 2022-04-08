@@ -1,0 +1,9 @@
+
+<begindomain>
+ID                             : 1
+TYPE                           : SIGMA
+LAYERS                         : 1
+LAYERTHICKNESS                 : 1.0
+DOMAINDEPTH                    : -99.00
+TOLERANCEDEPTH                 : 0.0500
+<enddomain>

@@ -1,0 +1,6 @@
+START                     : 2019 9 18 0 0 0
+END                       : 2019 9 22 0 0 0
+DT                        : 3600
+VARIABLEDT                : 0
+LAGRANGIAN                    : 1
+WAVES                         : 1

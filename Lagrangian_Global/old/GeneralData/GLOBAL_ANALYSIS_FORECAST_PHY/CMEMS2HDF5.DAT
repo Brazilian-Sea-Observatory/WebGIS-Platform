@@ -1,0 +1,6 @@
+FORECAST_MODE                 : 0
+REFDAY_TO_START               : 1  
+NUMBER_OF_RUNS                : 4
+
+START                         : 2019 08 31 00 00 00
+END                           : 2019 09 07 00 00 00
