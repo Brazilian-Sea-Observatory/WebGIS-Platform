@@ -1,0 +1,9 @@
+<ns20:spatialFilter>
+	<fes:BBOX>
+		<fes:ValueReference>whatever</fes:ValueReference>
+		<gml:Envelope srsName='urn:ogc:crs:espg:4326'>
+			<gml:lowerCorner>{longitudeMin} {latitudeMin}</gml:lowerCorner>
+			<gml:upperCorner>{longitudeMax} {latitudeMax}</gml:upperCorner>
+	</gml:Envelope>
+	</fes:BBOX>
+</ns20:spatialFilter>

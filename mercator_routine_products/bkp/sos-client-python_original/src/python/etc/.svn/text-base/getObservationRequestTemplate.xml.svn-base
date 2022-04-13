@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<ns20:GetObservation version='2.0.0' service='SOS' xmlns:ns20='http://www.opengis.net/sos/2.0' xmlns:fes='http://www.opengis.net/fes/2.0' xmlns:gml='http://www.opengis.net/gml/3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:swes='http://www.opengis.net/swes/2.0'> 
+	{synchronicity}
+  <ns20:offering>{offering}</ns20:offering> 
+  	{procedureFilter}
+	{observedProperty}
+  	{spacialFilter}
+  	{temporalFilter}
+  <ns20:responseFormat>{outputFormat}</ns20:responseFormat>
+  <ns20:resultModel>om:Measurement</ns20:resultModel> 
+</ns20:GetObservation>

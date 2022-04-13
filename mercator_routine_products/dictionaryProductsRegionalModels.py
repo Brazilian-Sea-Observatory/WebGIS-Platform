@@ -1,0 +1,107 @@
+#ProductsForecast
+variables_model = {
+	'platform_se_hydro_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/Plataforma_SE',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'hydrodinamic',
+			'file_name':'Hydrodynamic_2_Surface.hdf5.nc',
+			'prefix':'latest_hydro_model',
+			'number_files_to_merge': '5' 
+		}
+	},
+	'platform_se_wp_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/Plataforma_SE',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'water_properties',
+			'file_name':'WaterProperties_2_Surface.hdf5.nc',
+			'prefix':'latest_wp_model',
+			'number_files_to_merge': '5'
+		}
+	},
+	'pr_sc_wp_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/PR_SC',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'pr_sc_water_properties',
+			'file_name':'WaterProperties_2_Surface.hdf5.nc',
+			'prefix':'latest_wp_model',
+			'number_files_to_merge': '5'
+		}
+	},
+	'pr_sc_hydro_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/PR_SC',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'pr_sc_hydrodinamic',
+			'file_name':'Hydrodynamic_2_Surface.hdf5.nc',
+			'prefix':'latest_hydro_model',
+			'number_files_to_merge': '5'
+		}
+	},
+	'cep_wp_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/CEP',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'cep_water_properties',
+			'file_name':'WaterProperties_2_Surface.hdf5.nc',
+			'prefix':'latest_wp_model',
+			'number_files_to_merge': '5'
+		}
+	},
+	'cep_hydro_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/CEP',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'cep_hydrodinamic',
+			'file_name':'Hydrodynamic_2_Surface.hdf5.nc',
+			'prefix':'latest_hydro_model',
+			'number_files_to_merge': '5'
+		}
+	},
+	'babitonga_wp_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/Babitonga',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'babitonga_water_properties',
+			'file_name':'WaterProperties_2_Surface.hdf5.nc',
+			'prefix':'latest_wp_model',
+			'number_files_to_merge': '5'
+		}
+	},
+	'babitonga_hydro_surface':{
+		'model_dirs':{
+			'dir_origin':'/home/evx/ftp/files/Babitonga',
+			'dir_destiny':'/home/geoserver/geoserver_data/mercator_products',
+			'dir_destiny_name':'last_regional_models'
+		},
+		'model_info':{
+			'model_destiny_dir':'babitonga_hydrodinamic',
+			'file_name':'Hydrodynamic_2_Surface.hdf5.nc',
+			'prefix':'latest_hydro_model',
+			'number_files_to_merge': '5'
+		}
+	}
+}

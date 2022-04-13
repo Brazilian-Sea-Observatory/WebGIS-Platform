@@ -1,0 +1,161 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+  	<groupId>fr.ifremer.sos.client</groupId>
+  	<artifactId>sos-client-python</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>SOS Client Python</name>
+    <description>This package holds the python scripts used to address SOS servers for ordering, extracting and
+        downloading oceanographic data.
+    </description>
+	
+	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	</properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>ant-contrib</groupId>
+            <artifactId>ant-contrib</artifactId>
+            <version>1.0b3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>ant</groupId>
+                    <artifactId>ant</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant-nodeps</artifactId>
+            <version>1.6.5</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <scriptSourceDirectory>${basedir}/src</scriptSourceDirectory>
+        <testSourceDirectory>${basedir}/bin</testSourceDirectory>
+        <outputDirectory>${basedir}/bin</outputDirectory>
+        <testOutputDirectory>${basedir}/bin</testOutputDirectory>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>1.0-beta-6</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+    			<configuration>
+					<finalName>${project.artifactId}-${project.version}-${build-timestamp}</finalName>
+                    <descriptors>
+                        <descriptor>${basedir}/assembly/bin.xml</descriptor>
+                        <descriptor>${basedir}/assembly/src.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.0</version>
+                <configuration>
+                    <goals>deploy</goals>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <createChecksum>true</createChecksum>
+                </configuration>
+            </plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+				<version>1.4</version>
+				<configuration>
+					<revisionOnScmFailure>no.scm.config.in.pom</revisionOnScmFailure>
+				</configuration>
+				<executions>
+					<execution>
+						<id>create-timestamp-id</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>create-timestamp</goal>
+						</goals>
+						<configuration>
+							<timestampFormat>yyyyMMddHHmmssSSS</timestampFormat>
+							<timestampPropertyName>build-timestamp</timestampPropertyName>
+							<!-- formats the timestamp all together like 2016-04-04 14:17:05.123 
+								and puts it in the ${myBuildNumberVariable} buildProperty -->
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.4</version>
+                <configuration>
+                    <!--
+                        Task for generating documentation of the script. 
+                        Process is based on text2tags (see http://txt2tags.org/) that must be downloaded into {basedir}/target
+                      
+                        Generation can be started by invoking the following command line when necessary :
+                        
+                        mvn antrun:run
+                     -->                                      
+                    <tasks>
+                        <property name="compile_classpath" refid="maven.plugin.classpath" />
+                        <taskdef name="propertyregex" classname="net.sf.antcontrib.property.RegexTask" classpathref="maven.runtime.classpath" />
+
+                        <echo message="Generating documentation" />
+                        <echo message="Preparing source" />                        
+                        <propertyregex property="sos_client_python_version" input="${project.version}" regexp="(.*)-SNAPSHOT" select="\1" global="true" />
+                        <echo message="Version is ${sos_client_python_version}" />
+                        <delete file="${basedir}/target/readme-sos-client.t2t" quiet="true" />
+                        <copy file="${basedir}/src/doc/readme-sos-client.t2t" tofile="${basedir}/target/readme-sos-client.t2t">
+                            <filterchain>                           
+                                <replacetokens>
+                                    <token key="sos-client-python-version" value="${sos_client_python_version}" />
+                                </replacetokens>
+                            </filterchain>
+                        </copy>
+                        <echo message="- Format : man" />
+                        <exec executable="python">
+                            <arg value="${basedir}/txt2tags.py" />
+                            <arg value="-t" />
+                            <arg value="man" />
+                            <arg value="-o" />
+                            <arg value="${basedir}/src/doc/readme-sos-client.man" />
+                            <arg value="${basedir}/target/readme-sos-client.t2t" />
+                        </exec>
+                        <echo message="- Format : txt" />
+                        <exec executable="python">
+                            <arg value="${basedir}/txt2tags.py" />
+                            <arg value="-t" />
+                            <arg value="art" />
+                            <arg value="-o" />
+                            <arg value="${basedir}/src/doc/readme-sos-client.txt" />
+                            <arg value="${basedir}/target/readme-sos-client.t2t" />
+                        </exec>
+                    </tasks>
+                </configuration>
+              </plugin>
+        </plugins>
+    </build>
+</project>

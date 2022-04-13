@@ -1,0 +1,1 @@
+0 10,18 * * * bash /home/geoserver/mercator_routine_products/routineMercatorOperational.sh > /home/geoserver/mercator_routine_products/logs/routineMercatorOperational.log 2>&1

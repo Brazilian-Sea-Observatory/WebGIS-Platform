@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/python/lib/sos_api.py=utf-8
+encoding//src/python/lib/sos_request_builder.py=utf-8
+encoding//src/python/lib/stop_watch.py=utf-8
+encoding//src/python/lib/utils_cas.py=utf-8
+encoding//src/python/lib/utils_collection.py=utf-8
+encoding//src/python/lib/utils_html.py=utf-8
+encoding//src/python/lib/utils_http.py=utf-8
+encoding//src/python/lib/utils_log.py=utf-8
+encoding//src/python/lib/utils_messages.py=utf-8
+encoding//src/python/lib/utils_request_object.py=utf-8
+encoding//src/python/sos_client.py=utf-8
+encoding/<project>=UTF-8

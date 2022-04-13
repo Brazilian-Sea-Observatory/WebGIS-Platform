@@ -1,0 +1,9 @@
+SOS Client Python
+
+This package holds the python scripts used to address OGC/SOS servers for subsetting and downloading oceanographic data.
+
+Version History
+===============
+0.0.1 - Jan. 2018
+------------------
+ 

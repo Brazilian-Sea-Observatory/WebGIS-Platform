@@ -1,0 +1,9 @@
+<ns20:temporalFilter>
+	<fes:During>
+		<fes:ValueReference>phenomenonTime</fes:ValueReference>
+		<gml:TimePeriod gml:id='tp_1'>
+			<gml:beginPosition>{dateStart}</gml:beginPosition>
+			<gml:endPosition>{dateEnd}</gml:endPosition>
+		</gml:TimePeriod>
+	</fes:During>
+</ns20:temporalFilter>

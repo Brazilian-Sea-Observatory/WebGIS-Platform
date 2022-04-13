@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/oceanotron/!svn/ver/1035/oceanotron-clients/sos-client-python/src/python/etc
+END
+getObservationRequestTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/oceanotron/!svn/ver/1018/oceanotron-clients/sos-client-python/src/python/etc/getObservationRequestTemplate.xml
+END
+log.ini
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/oceanotron/!svn/ver/1012/oceanotron-clients/sos-client-python/src/python/etc/log.ini
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/oceanotron/!svn/ver/1035/oceanotron-clients/sos-client-python/src/python/etc/messages.properties
+END
+temporalFilterTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/oceanotron/!svn/ver/1012/oceanotron-clients/sos-client-python/src/python/etc/temporalFilterTemplate.xml
+END
+outOfBandRequestTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/oceanotron/!svn/ver/1012/oceanotron-clients/sos-client-python/src/python/etc/outOfBandRequestTemplate.xml
+END
+observedPropertyTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/oceanotron/!svn/ver/1012/oceanotron-clients/sos-client-python/src/python/etc/observedPropertyTemplate.xml
+END
+procedureFilterTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/oceanotron/!svn/ver/1018/oceanotron-clients/sos-client-python/src/python/etc/procedureFilterTemplate.xml
+END
+spacialFilterTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/oceanotron/!svn/ver/1012/oceanotron-clients/sos-client-python/src/python/etc/spacialFilterTemplate.xml
+END
+describeSensorRequestTemplate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/oceanotron/!svn/ver/1012/oceanotron-clients/sos-client-python/src/python/etc/describeSensorRequestTemplate.xml
+END
