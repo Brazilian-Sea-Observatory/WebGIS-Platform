@@ -1,0 +1,15 @@
+<layer>
+  <name>temperature_forecast_daily</name>
+  <id>LayerInfoImpl-6cb1c427:16c77af33d7:-1fdb</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57cd884:169bea875c7:-7e04</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-6cb1c427:16c77af33d7:-1fdc</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

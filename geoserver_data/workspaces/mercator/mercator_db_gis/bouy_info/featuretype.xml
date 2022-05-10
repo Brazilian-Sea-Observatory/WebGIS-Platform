@@ -1,0 +1,66 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--379ab39f:16e5d999d52:-764</id>
+  <name>bouy_info</name>
+  <nativeName>bouy_info</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--379ab39f:16e5d999d52:-41a4</id>
+  </namespace>
+  <title>bouy_info</title>
+  <keywords>
+    <string>features</string>
+    <string>bouy_info</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-179.996597290039</minx>
+    <maxx>179.999603271484</maxx>
+    <miny>-64.7911987304688</miny>
+    <maxy>90.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-179.996597290039</minx>
+    <maxx>179.999603271484</maxx>
+    <miny>-64.7911987304688</miny>
+    <maxy>90.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="elevation">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>bouy_info</name>
+        <sql>SELECT a.code,a.time,a.geom,b.name as variable,a.value FROM data a INNER JOIN variable b ON a.variable_id=b.id
+</sql>
+        <escapeSql>false</escapeSql>
+        <geometry>
+          <name>geom</name>
+          <type>Geometry</type>
+          <srid>-1</srid>
+        </geometry>
+      </virtualTable>
+    </entry>
+    <entry key="time">
+      <dimensionInfo>
+        <enabled>false</enabled>
+      </dimensionInfo>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--379ab39f:16e5d999d52:-765</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

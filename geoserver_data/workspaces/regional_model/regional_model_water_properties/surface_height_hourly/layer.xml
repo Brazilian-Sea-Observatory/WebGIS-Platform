@@ -1,0 +1,15 @@
+<layer>
+  <name>surface_height_hourly</name>
+  <id>LayerInfoImpl-7a43d5b9:16bb7a55b7b:-7728</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-5982</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-7a43d5b9:16bb7a55b7b:-7729</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

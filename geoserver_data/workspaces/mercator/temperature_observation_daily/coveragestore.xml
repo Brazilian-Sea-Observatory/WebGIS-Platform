@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--e0f9fc2:16b71372caa:-70a3</id>
+  <name>temperature_observation_daily</name>
+  <description>temperature_observation_daily</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-3280b511:16709290ab4:-7fff</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/temperature_observation_daily/temperature_observation_daily_1.nc</url>
+</coverageStore>

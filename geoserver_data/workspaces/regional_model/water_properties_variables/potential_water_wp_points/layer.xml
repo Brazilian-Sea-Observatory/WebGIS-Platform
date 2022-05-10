@@ -1,0 +1,15 @@
+<layer>
+  <name>potential_water_wp_points</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-5c36</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-5c37</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

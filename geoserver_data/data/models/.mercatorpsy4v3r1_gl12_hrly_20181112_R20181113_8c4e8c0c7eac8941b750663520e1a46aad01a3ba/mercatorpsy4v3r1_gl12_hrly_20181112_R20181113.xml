@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Indexer>
+    <coverages>
+        <coverage>
+            <schema name="vo">
+                <attributes>the_geom:Polygon,imageindex:Integer,time:java.util.Date,depth:java.lang.Float</attributes>
+            </schema>
+            <origName>vo</origName>
+            <name>vo</name>
+        </coverage>
+        <coverage>
+            <schema name="thetao">
+                <attributes>the_geom:Polygon,imageindex:Integer,time:java.util.Date,depth:java.lang.Float</attributes>
+            </schema>
+            <origName>thetao</origName>
+            <name>thetao</name>
+        </coverage>
+        <coverage>
+            <schema name="uo">
+                <attributes>the_geom:Polygon,imageindex:Integer,time:java.util.Date,depth:java.lang.Float</attributes>
+            </schema>
+            <origName>uo</origName>
+            <name>uo</name>
+        </coverage>
+        <coverage>
+            <schema name="zos">
+                <attributes>the_geom:Polygon,imageindex:Integer,time:java.util.Date,depth:java.lang.Float</attributes>
+            </schema>
+            <origName>zos</origName>
+            <name>zos</name>
+        </coverage>
+    </coverages>
+</Indexer>

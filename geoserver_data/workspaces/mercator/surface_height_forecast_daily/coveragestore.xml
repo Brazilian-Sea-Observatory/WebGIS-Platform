@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--57cd884:169bea875c7:-7f2f</id>
+  <name>surface_height_forecast_daily</name>
+  <description>surface_height_forecast_daily</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-3280b511:16709290ab4:-7fff</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/surface_height_forecast_daily/surface_height_forecast_daily_1.nc</url>
+</coverageStore>

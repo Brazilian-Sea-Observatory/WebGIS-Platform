@@ -1,0 +1,15 @@
+<layer>
+  <name>silicate_forecast_daily</name>
+  <id>LayerInfoImpl-25b99245:16cfc8d03ee:e7f</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5c94d0f8:169581f1b85:-7a3d</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-25b99245:16cfc8d03ee:e7e</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

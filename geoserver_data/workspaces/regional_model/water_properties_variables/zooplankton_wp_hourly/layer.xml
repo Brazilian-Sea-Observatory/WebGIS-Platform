@@ -1,0 +1,15 @@
+<layer>
+  <name>zooplankton_wp_hourly</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-5c22</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-573e</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-5c23</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

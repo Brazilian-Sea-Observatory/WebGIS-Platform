@@ -1,0 +1,15 @@
+<layer>
+  <name>salinity_babitonga_wp</name>
+  <id>LayerInfoImpl-25b99245:16cfc8d03ee:-349b</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-56ef</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-25b99245:16cfc8d03ee:-349c</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

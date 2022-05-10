@@ -1,0 +1,15 @@
+<layer>
+  <name>bathymetry_wp_hourly</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-5c40</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-57de</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-5c41</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

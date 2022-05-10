@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--379ab39f:16e6d40deb6:4c6c</id>
+  <name>regional_temperature</name>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--379ab39f:16e5d999d52:-419d</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/last_regional_models/water_properties/20191114_20191119_WaterProperties_2_Surface.hdf5.nc</url>
+</coverageStore>

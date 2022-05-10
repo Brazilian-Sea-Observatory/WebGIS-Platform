@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--379ab39f:16e6775e0eb:-4df5</id>
+  <name>mass concentration of uspended matter</name>
+  <description>mass concentration of uspended matter</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--379ab39f:16e5d999d52:-419f</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/mass_concentration_of_suspended_matter_in_sea_water/mass_concentration_of_suspended_matter_in_sea_water_1.nc</url>
+</coverageStore>

@@ -1,0 +1,15 @@
+<layer>
+  <name>test_ammonia</name>
+  <id>LayerInfoImpl--323bea17:16a35d18166:-5452</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe2</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--323bea17:16a35d18166:-5453</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

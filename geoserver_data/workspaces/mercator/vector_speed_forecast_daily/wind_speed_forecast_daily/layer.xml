@@ -1,0 +1,20 @@
+<layer>
+  <name>wind_speed_forecast_daily</name>
+  <id>LayerInfoImpl--57cd884:169bea875c7:-7fd1</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-7b12</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--3a75b49:16a86740813:-7c73</id>
+    </style>
+  </styles>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--57cd884:169bea875c7:-7fd2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

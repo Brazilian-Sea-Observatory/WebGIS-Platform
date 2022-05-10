@@ -1,0 +1,15 @@
+<layer>
+  <name>surface_sea_directions_hourly</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-95c</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-7b12</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-95d</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

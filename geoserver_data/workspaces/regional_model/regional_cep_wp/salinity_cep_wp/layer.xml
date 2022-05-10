@@ -1,0 +1,15 @@
+<layer>
+  <name>salinity_cep_wp</name>
+  <id>LayerInfoImpl-25b99245:16cfc8d03ee:-3896</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-56ef</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-25b99245:16cfc8d03ee:-3897</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

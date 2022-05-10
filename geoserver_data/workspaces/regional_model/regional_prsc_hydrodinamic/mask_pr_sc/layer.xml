@@ -1,0 +1,15 @@
+<layer>
+  <name>mask_pr_sc</name>
+  <id>LayerInfoImpl-6cb1c427:16c77af33d7:-4419</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-6cb1c427:16c77af33d7:-441a</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

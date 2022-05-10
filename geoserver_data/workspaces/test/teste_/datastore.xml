@@ -1,0 +1,23 @@
+<dataStore>
+  <id>DataStoreInfoImpl--7585951f:16bc8eca52d:-384f</id>
+  <name>teste_</name>
+  <description>teste_</description>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4fbc6dc7:16760baa330:-7f30</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Etc/UTC</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">http://23.92.28.83:8080/geoserver/test</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:shp/INS-CORIOLIS-GLO-NRT-OBS_POINTSERIES_LATEST-132cc592-1149-4c5c-bdd4-6fd6839c5371-point.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

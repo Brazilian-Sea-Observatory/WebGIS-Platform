@@ -1,0 +1,15 @@
+<layer>
+  <name>particulate_organic_phosphorus_hourly</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-5c2a</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:988</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-5c2b</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

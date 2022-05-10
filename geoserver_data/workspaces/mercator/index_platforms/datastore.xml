@@ -1,0 +1,23 @@
+<dataStore>
+  <id>DataStoreInfoImpl--5d75bd20:16c1e7be8e5:-2d01</id>
+  <name>index_platforms</name>
+  <description>index_platforms</description>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-3280b511:16709290ab4:-7fff</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Etc/UTC</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">mercator</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:shp/shp_platforms/test_sql_platfotms.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

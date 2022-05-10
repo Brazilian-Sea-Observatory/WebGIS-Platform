@@ -1,0 +1,15 @@
+<layer>
+  <name>temperature_observation_daily</name>
+  <id>LayerInfoImpl-33bfe616:16b8c00cb9b:-7dbe</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-33bfe616:16b8c00cb9b:-7673</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-33bfe616:16b8c00cb9b:-7dbf</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

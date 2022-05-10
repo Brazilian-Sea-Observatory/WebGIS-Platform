@@ -1,0 +1,15 @@
+<layer>
+  <name>chlorophyll_observation_daily</name>
+  <id>LayerInfoImpl-33bfe616:16b8c00cb9b:-7ba5</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-5c94d0f8:169581f1b85:-7a2f</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-33bfe616:16b8c00cb9b:-7ba6</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-7a43d5b9:16bb7a55b7b:-7ff7</id>
+  <name>regional_model_water_properties</name>
+  <description>regional_model_water_properties</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--3a75b49:16a86740813:-5d08</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/last_regional_models/water_properties/latest_wp_model_1.nc</url>
+</coverageStore>

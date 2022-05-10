@@ -1,0 +1,15 @@
+<layer>
+  <name>dissolved_refractory_organic_phosphorus_hourly</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-5c38</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:e3d</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-5c39</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

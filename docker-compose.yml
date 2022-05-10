@@ -137,7 +137,8 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/maretec/mercator/geoserver_data 
+      #device: /home/maretec/mercator/geoserver_data #substitui mercator por WebGIS-Platform
+      device: /home/maretec/WebGIS-Platform/geoserver_data 
   geo-db-data:
   pgdata:
     driver: local

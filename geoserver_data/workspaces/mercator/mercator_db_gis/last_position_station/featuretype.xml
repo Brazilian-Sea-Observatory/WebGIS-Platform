@@ -1,0 +1,51 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--379ab39f:16e6d75c4c1:1b3b</id>
+  <name>last_position_station</name>
+  <nativeName>last_position_station</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl--379ab39f:16e5d999d52:-41a4</id>
+  </namespace>
+  <title>last_position_station</title>
+  <keywords>
+    <string>features</string>
+    <string>last_position_station</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-179.534194946289</minx>
+    <maxx>179.925399780273</maxx>
+    <miny>-63.6861991882324</miny>
+    <maxy>88.4833984375</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-179.534194946289</minx>
+    <maxx>179.925399780273</maxx>
+    <miny>-63.6861991882324</miny>
+    <maxy>88.4833984375</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>last_position_station</name>
+        <sql>SELECT DISTINCT ON (code) code,time,geom FROM data ORDER BY code,time DESC
+</sql>
+        <escapeSql>false</escapeSql>
+      </virtualTable>
+    </entry>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl--379ab39f:16e5d999d52:-765</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

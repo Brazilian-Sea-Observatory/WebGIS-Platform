@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+                       xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+                       xmlns="http://www.opengis.net/sld" 
+                       xmlns:ogc="http://www.opengis.net/ogc" 
+                       xmlns:xlink="http://www.w3.org/1999/xlink" 
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NamedLayer>
+    <Name>speed_water</Name>
+    <UserStyle>
+      <Title>speed_water</Title>
+      <FeatureTypeStyle>
+        <Rule>
+          <RasterSymbolizer>
+            <ColorMap>
+              <ColorMapEntry color="#1b52ac" quantity="0.05" label="0.05" opacity="1" />
+              <ColorMapEntry color="#1d5cb6" quantity="0.10" label="0.10" opacity="1"/>
+              <ColorMapEntry color="#2268be" quantity="0.15" label="0.15" opacity="1"/>
+              <ColorMapEntry color="#2773c3" quantity="0.20" label="0.20" opacity="1"/>
+              <ColorMapEntry color="#2c7fc6" quantity="0.25" label="0.25" opacity="1"/>
+              <ColorMapEntry color="#2f8bc8" quantity="0.30" label="0.30" opacity="1"/>
+              <ColorMapEntry color="#3298c8" quantity="0.35" label="0.35" opacity="1"/>
+              <ColorMapEntry color="#33a5c7" quantity="0.40" label="0.40" opacity="1"/>
+              <ColorMapEntry color="#31b2c4" quantity="0.45" label="0.45" opacity="1"/>
+              <ColorMapEntry color="#58bea7" quantity="0.50" label="0.50" opacity="1"/>
+              <ColorMapEntry color="#7cc883" quantity="0.55" label="0.55" opacity="1"/>
+              <ColorMapEntry color="#98d264" quantity="0.60" label="0.60" opacity="1" />
+              <ColorMapEntry color="#b3da48" quantity="0.65" label="0.65" opacity="1" />
+              <ColorMapEntry color="#cee227" quantity="0.70" label="0.70" opacity="1"/>
+              <ColorMapEntry color="#d6d328" quantity="0.75" label="0.75" opacity="1"/>
+              <ColorMapEntry color="#ddc429" quantity="0.80" label="0.80" opacity="1"/>
+              <ColorMapEntry color="#e3b52a" quantity="0.85" label="0.85" opacity="1" />
+              <ColorMapEntry color="#e9a52a" quantity="0.90" label="0.95" opacity="1" />
+              <ColorMapEntry color="#ee932b" quantity="1.00" label="1.00" opacity="1" />
+              <ColorMapEntry color="#f0832b" quantity="1.10" label="1.10" opacity="1" />
+              <ColorMapEntry color="#ee732a" quantity="1.15" label="1.15" opacity="1" />
+              <ColorMapEntry color="#ea6429" quantity="1.20" label="1.20" opacity="1" />
+              <ColorMapEntry color="#e45727" quantity="1.25" label="1.25" opacity="1" />
+              <ColorMapEntry color="#db4a25" quantity="1.30" label="1.30" opacity="1" />
+              <ColorMapEntry color="#d14023" quantity="1.35" label="1.35" opacity="1"/>
+              <ColorMapEntry color="#c63721" quantity="1.40" label="1.40" opacity="1" />
+            </ColorMap>
+          </RasterSymbolizer>
+        </Rule>
+      </FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>

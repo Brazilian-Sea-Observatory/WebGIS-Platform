@@ -1,0 +1,11 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl--323bea17:16a35d18166:-5746</id>
+  <name>test_external_model</name>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4fbc6dc7:16760baa330:-7f30</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:///home/geoserver/tmp/WaterProperties_2_Surface.nc</url>
+</coverageStore>

@@ -1,0 +1,15 @@
+<layer>
+  <name>water_speed_cep</name>
+  <id>LayerInfoImpl--379ab39f:16e5d999d52:-40e1</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--379ab39f:16e5d999d52:-cbc</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--379ab39f:16e5d999d52:-415a</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

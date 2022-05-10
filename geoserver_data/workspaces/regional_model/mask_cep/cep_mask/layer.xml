@@ -1,0 +1,15 @@
+<layer>
+  <name>cep_mask</name>
+  <id>LayerInfoImpl-25b99245:16cfc8d03ee:-389c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-25b99245:16cfc8d03ee:-389d</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

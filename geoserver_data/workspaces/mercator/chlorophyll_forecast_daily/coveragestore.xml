@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-25b99245:16cfc8d03ee:e49</id>
+  <name>chlorophyll_forecast_daily</name>
+  <description>chlorophyll_forecast_daily</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-3280b511:16709290ab4:-7fff</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/chlorophyll_concentration/20190920_1200_chlorophyll_concentration.nc</url>
+</coverageStore>

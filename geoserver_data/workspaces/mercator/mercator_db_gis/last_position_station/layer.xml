@@ -1,0 +1,15 @@
+<layer>
+  <name>last_position_station</name>
+  <id>LayerInfoImpl--379ab39f:16e6d75c4c1:1b3c</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--379ab39f:16e5d999d52:-6be6</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--379ab39f:16e6d75c4c1:1b3b</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

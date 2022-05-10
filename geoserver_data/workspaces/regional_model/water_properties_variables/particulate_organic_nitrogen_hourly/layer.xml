@@ -1,0 +1,15 @@
+<layer>
+  <name>particulate_organic_nitrogen_hourly</name>
+  <id>LayerInfoImpl--3a75b49:16a86740813:-5c2c</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-579c</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--3a75b49:16a86740813:-5c2d</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

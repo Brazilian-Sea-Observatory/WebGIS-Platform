@@ -1,0 +1,15 @@
+<layer>
+  <name>mass_concentration_of_uspended_matter</name>
+  <id>LayerInfoImpl--379ab39f:16e6775e0eb:-4de9</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--379ab39f:16e6775e0eb:-4956</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--379ab39f:16e6775e0eb:-4dea</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

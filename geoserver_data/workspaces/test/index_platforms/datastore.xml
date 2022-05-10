@@ -1,0 +1,22 @@
+<dataStore>
+  <id>DataStoreInfoImpl--379ab39f:16e6193f18d:3007</id>
+  <name>index_platforms</name>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--379ab39f:16e5d999d52:-419c</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">ISO-8859-1</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Etc/UTC</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">http://23.92.28.83:8080/geoserver/test</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="url">file:shp/shp_platforms/test_sql_platfotms.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

@@ -1,0 +1,15 @@
+<layer>
+  <name>salinity_forecast_daily</name>
+  <id>LayerInfoImpl--57cd884:169bea875c7:-7f49</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--57cd884:169bea875c7:-7d9f</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--57cd884:169bea875c7:-7f4a</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,15 @@
+<layer>
+  <name>surface_height_forecast_daily</name>
+  <id>LayerInfoImpl--57cd884:169bea875c7:-7f1d</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--4fbc6dc7:16760baa330:-7f04</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--57cd884:169bea875c7:-7f1e</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

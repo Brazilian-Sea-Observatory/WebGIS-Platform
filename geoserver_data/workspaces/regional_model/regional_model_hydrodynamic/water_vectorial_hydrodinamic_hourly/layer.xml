@@ -1,0 +1,15 @@
+<layer>
+  <name>water_vectorial_hydrodinamic_hourly</name>
+  <id>LayerInfoImpl--379ab39f:16e5d999d52:-40dc</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--379ab39f:16e6193f18d:3bf6</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl--379ab39f:16e5d999d52:-4155</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-33bfe616:16b8c00cb9b:-7bb3</id>
+  <name>chlorophyll_observation_daily</name>
+  <description>chlorophyll_observation_daily</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-3280b511:16709290ab4:-7fff</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/chlorophyll_observation_daily/chlorophyll_observation_daily_1.nc</url>
+</coverageStore>

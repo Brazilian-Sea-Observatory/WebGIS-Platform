@@ -1,0 +1,15 @@
+<layer>
+  <name>index_platforms</name>
+  <id>LayerInfoImpl--5d75bd20:16c1e7be8e5:-2cff</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--5d75bd20:16c1e7be8e5:-2cfe</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--5d75bd20:16c1e7be8e5:-2d00</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

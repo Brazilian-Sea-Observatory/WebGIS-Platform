@@ -1,0 +1,15 @@
+<layer>
+  <name>salinity_wp_hourly</name>
+  <id>LayerInfoImpl-6cb1c427:16c77af33d7:-1ffa</id>
+  <type>RASTER</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--3a75b49:16a86740813:-56ef</id>
+  </defaultStyle>
+  <resource class="coverage">
+    <id>CoverageInfoImpl-6cb1c427:16c77af33d7:-1ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

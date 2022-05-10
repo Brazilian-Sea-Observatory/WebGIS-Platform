@@ -1,0 +1,12 @@
+<coverageStore>
+  <id>CoverageStoreInfoImpl-5c94d0f8:169581f1b85:-7ffc</id>
+  <name>test</name>
+  <description>test</description>
+  <type>NetCDF</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--4fbc6dc7:16760baa330:-7f30</id>
+  </workspace>
+  <__default>false</__default>
+  <url>file:mercator_products/chlorophyll_concentration/20190307_1200_chlorophyll_concentration.nc</url>
+</coverageStore>
