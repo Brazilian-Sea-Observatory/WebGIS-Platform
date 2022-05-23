@@ -1,0 +1,7 @@
+Copiei de maretecVM a estrutura de diretório, mas não os arquivos contidos em mercator-server/wind-data
+Os subdiretórios de wind-data copiados são:
+batibonga
+cep
+pr_sc
+regional
+
