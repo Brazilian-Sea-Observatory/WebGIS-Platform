@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:12
+    restart: always
+    volumes:
+      - /home/rundeck/pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: 'rundeck'
+      POSTGRES_PASSWORD: 'LvR$kLq#3YRRsVhM^x3JBI4#wp8EhaDUiv%tc373'
+      POSTGRES_USER: 'rundeck'
+    
+  rundeck:
+    image: rundeck/rundeck:3.2.3
+    restart: always
+    volumes:
+      - /home/rundeck/realm.properties:/home/rundeck/server/config/realm.properties
+      - /home/rundeck/ssh:/home/rundeck/.ssh
+      - /home/rundeck/nodes.yml:/home/rundeck/nodes.yml
+    ports:
+      - 4440:4440
+    environment:
+      RUNDECK_DATABASE_DRIVER: 'org.postgresql.Driver'
+      RUNDECK_DATABASE_PASSWORD: 'LvR$kLq#3YRRsVhM^x3JBI4#wp8EhaDUiv%tc373'
+      RUNDECK_DATABASE_URL: jdbc:postgresql://postgres/rundeck
+      RUNDECK_DATABASE_USERNAME: 'rundeck'
+      #RUNDECK_GRAILS_URL: 'http://193.136.129.239:4440'
+      RUNDECK_GRAILS_URL: 'http://127.0.1.1:4440'
+    depends_on:
+      - postgres
