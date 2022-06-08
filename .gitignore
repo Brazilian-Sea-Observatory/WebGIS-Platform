@@ -95,3 +95,9 @@ db/*
 !tsconfig.json
 
 geoserver/geoserver_data/*
+geoserver_data/controlflow.properties
+geoserver_data/s3.properties
+geoserver_data/security/usergroup/default/users.xml
+geoserver_data/.updatepassword.lock
+geoserver_data/security/usergroup/default/users.xml.orig
+

@@ -94,6 +94,7 @@ services:
   geoserver:
     build: ./geoserver
     # image: kartoza/geoserver:2.15.2
+    image: kartoza/geoserver:2.16.1
     volumes:
       # - ./geoserver_data:/opt/geoserver/data_dir
       - geoserver_data:/opt/geoserver/data
