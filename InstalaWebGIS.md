@@ -73,7 +73,7 @@ TODO: O npm install está emitindo vários avisos de deprecated e vulnerabilidad
 npm run build
 # export SPREAD_OIL_PATH=<caminho para a ferramenta do modelo lagrangiano>
 # como por exemplo: 
-export SPREAD_OIL_PATH=/home/maretec/Lagrangian_Global/BSO
+export SPREAD_OIL_PATH=/home/maretec/WebGIS-Platform/Lagrangian_Global/BSO
 npm start
 
 cd .. (retorna para WebGIS-Platform)
