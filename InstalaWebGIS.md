@@ -147,7 +147,7 @@ mysql -u root –p 'm3rc4t0r##' mercator_db < /var/lib/mysql/dump.sql
 
 10.3 - Subir Base de Backup
 
-sudo /usr/local/bin/docker-compose up -d db_dbbackups
+sudo /usr/local/bin/docker-compose up -d db-dbbackups
 
 
 11 - Subir Webserver
