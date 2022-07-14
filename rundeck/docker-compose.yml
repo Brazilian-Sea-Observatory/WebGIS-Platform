@@ -15,7 +15,10 @@ services:
     image: rundeck/rundeck:3.2.3
     restart: always
     volumes:
-      - /home/rundeck/realm.properties:/home/rundeck/server/config/realm.properties
+            #- /home/rundeck/realm.properties:/home/rundeck/server/config/realm.properties
+            #mount /home/rundeck/realm.properties:/home/rundeck/server/config/realm.properties (via /proc/self/fd/6), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)?
+
+      - /home/rundeck/:/home/rundeck/server/config/
       - /home/rundeck/ssh:/home/rundeck/.ssh
       - /home/rundeck/nodes.yml:/home/rundeck/nodes.yml
     ports:

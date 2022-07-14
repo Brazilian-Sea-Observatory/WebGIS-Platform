@@ -91,8 +91,7 @@ em que "service" é um dos services configurados em WebGIS-Platform/docker-compo
 6 - Subir Backend
 
 ```bash
-cd ./mercator
-sudo /usr/local/bin/docker-compose up backend -d
+sudo /usr/local/bin/docker-compose up -d backend
 ```
 
 7 - Instalar PM2
