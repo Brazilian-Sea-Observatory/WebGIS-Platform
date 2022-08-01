@@ -125,7 +125,7 @@ services:
     build: ./mercator_routine_products
     volumes:
       - /home/ubuntu/ftplocal:/home/evx/ftp/files/
-      - geoserver/geoserver_data:/home/geoserver/geoserver_data
+      - ./geoserver/geoserver_data:/home/geoserver/geoserver_data
     depends_on:
       # - geoserver
       - db
@@ -139,7 +139,7 @@ volumes:
       type: none
       o: bind
       #device: /home/maretec/mercator/geoserver_data #substitui mercator por WebGIS-Platform
-      device: /home/maretec/WebGIS-Platform/geoserver_data 
+      device: /home/maretec/WebGIS-Platform/geoserver/geoserver_data 
   geo-db-data:
   pgdata:
     driver: local
