@@ -1,5 +1,6 @@
 # estágio de compilação
 FROM node:10.15.1-alpine as build-stage
+RUN mkdir /app
 WORKDIR /app
 COPY package.json ./
 RUN npm install node-sass --save
