@@ -125,7 +125,7 @@ services:
     build: ./mercator_routine_products
     volumes:
       - /home/ubuntu/ftplocal:/home/evx/ftp/files/
-      - geoserver_data:/home/geoserver/geoserver_data
+      - geoserver/geoserver_data:/home/geoserver/geoserver_data
     depends_on:
       # - geoserver
       - db
