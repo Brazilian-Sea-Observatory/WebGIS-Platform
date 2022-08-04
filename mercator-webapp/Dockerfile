@@ -13,10 +13,10 @@ FROM nginx:1.13.12-alpine as production-stage
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/node_modules/vue/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
-RUN mkdir -p /root/certs/portal.brazilianseaobservatory.org/
-COPY privkey.pem /root/certs/portal.brazilianseaobservatory.org/privkey.pem
-COPY fullchain.pem /root/certs/portal.brazilianseaobservatory.org/fullchain.pem
-RUN chmod -R 400 /root/certs/portal.brazilianseaobservatory.org/
+RUN mkdir -p /root/certs/brasea.org/
+COPY privkey.pem /root/certs/brasea.org/privkey.pem
+COPY fullchain.pem /root/certs/brasea.org/fullchain.pem
+RUN chmod -R 400 /root/certs/brasea.org/
 
 EXPOSE 80
 EXPOSE 443
