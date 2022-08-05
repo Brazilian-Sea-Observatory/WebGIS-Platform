@@ -14,7 +14,7 @@ services:
     build: ./jupyter
     volumes:
         - ./notebooks:/home/jovyan/work
-        - geoserver_data:/home/geoserver-data # vector_speed_forecast_daily
+        - geoserver-data:/home/geoserver-data # vector_speed_forecast_daily
         - ./mercator-server/wind-data:/home/leaflet_velocity
   
   mercator_db:
