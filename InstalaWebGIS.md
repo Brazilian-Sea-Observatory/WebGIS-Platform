@@ -150,11 +150,11 @@ mysql -u root –p 'm3rc4t0r##' mercator_db < /var/lib/mysql/dump.sql
 sudo /usr/local/bin/docker-compose up -d db-dbbackups
 
 
-11 - Subir Webserver
+#Não precisa Subir Webserver. O frontend já sobe o nginx
 
-sudo /usr/local/bin/docker-compose up -d webserver
+#sudo /usr/local/bin/docker-compose up -d webserver
 
-12 - Subir Geoserver
+11 - Subir Geoserver
 
 sudo /usr/local/bin/docker-compose up -d geoserver
 
