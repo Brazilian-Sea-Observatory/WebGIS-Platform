@@ -95,9 +95,10 @@ db/*
 !tsconfig.json
 
 geoserver/geoserver_data/*
-geoserver_data/controlflow.properties
-geoserver_data/s3.properties
-geoserver_data/security/usergroup/default/users.xml
-geoserver_data/.updatepassword.lock
-geoserver_data/security/usergroup/default/users.xml.orig
+geoserver/geoserver_data/controlflow.properties
+geoserver/geoserver_data/s3.properties
+geoserver/geoserver_data/security/usergroup/default/users.xml
+geoserver/geoserver_data/.updatepassword.lock
+geoserver/geoserver_data/security/usergroup/default/users.xml.orig
+geoserver/geoserver_data/gwc/diskquota_page_store_h2/diskquota.trace.db
 
