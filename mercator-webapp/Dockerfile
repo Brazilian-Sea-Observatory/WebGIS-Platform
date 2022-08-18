@@ -8,7 +8,7 @@ RUN rm -rf node_modules
 RUN rm -rf package-lock.json
 RUN npm install node-sass --save
 RUN npm install
-RUN npm test
+RUN npm test:unit
 COPY . .
 RUN npm run build
 
