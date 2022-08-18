@@ -7,7 +7,7 @@ RUN npm cache verify
 RUN rm -rf node_modules
 RUN rm -rf package-lock.json
 RUN npm install node-sass --save
-RUN npm install --cache /tmp/empty-cache
+RUN npm install --unsafe-perm
 COPY . .
 RUN npm run build
 
