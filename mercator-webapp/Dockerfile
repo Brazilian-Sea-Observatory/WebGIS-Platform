@@ -3,6 +3,8 @@ FROM node:10.15.1-alpine as build-stage
 RUN mkdir /app
 WORKDIR /app
 COPY package.json ./
+RUN npm cache clean --force
+RUN rm -rf node_modules
 RUN npm install node-sass --save
 RUN npm install
 COPY . .
