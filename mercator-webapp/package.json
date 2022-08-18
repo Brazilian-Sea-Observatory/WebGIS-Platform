@@ -17,7 +17,7 @@
     "leaflet-timedimension": "^1.1.0",
     "leaflet-velocity": "^1.2.4",
     "register-service-worker": "^1.0.0",
-    "vue": "^2.5.17",
+    "vue": "^3.2.37",
     "vue-class-component": "^6.0.0",
     "vue-i18n": "^8.3.0",
     "vue-property-decorator": "^7.3.0",
