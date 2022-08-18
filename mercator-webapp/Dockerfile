@@ -3,11 +3,11 @@ FROM node:10.15.1-alpine as build-stage
 RUN mkdir /app
 WORKDIR /app
 COPY package.json ./
-RUN npm cache clean
+RUN npm cache verify
 RUN rm -rf node_modules
 RUN rm -rf package-lock.json
 RUN npm install node-sass --save
-RUN npm install
+RUN npm install --cache /tmp/empty-cache
 COPY . .
 RUN npm run build
 
