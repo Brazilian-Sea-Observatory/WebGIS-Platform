@@ -139,7 +139,7 @@ export default class DataVisualizationSidebar extends Vue {
     public genChart(data: any, id: string) {
         const options = {
             year: 'numeric', month: 'numeric', day: 'numeric'
-        }
+        } as const;
         const formatter = new Intl.DateTimeFormat('pt-BR', options);
         const date = data.map((value: { date: string, value: number}) => {
             const dateObject = new Date(value.date);
@@ -273,7 +273,7 @@ export default class DataVisualizationSidebar extends Vue {
             hour: 'numeric', minute: 'numeric', second: 'numeric',
             hour12: false,
             timeZone: 'America/Sao_Paulo' 
-        };
+        } as const;
         const formatter = new Intl.DateTimeFormat('pt-BR', options);
         this.$store.subscribe((mutation, state) => {
             if (mutation.type === 'SET_STATION_VIEW') {
