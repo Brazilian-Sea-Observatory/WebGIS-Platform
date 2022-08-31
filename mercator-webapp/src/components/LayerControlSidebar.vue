@@ -651,7 +651,7 @@ export default class LayerControlSidebar extends Vue {
                     second: 'numeric',
                     hour12: false,
                     timeZone: 'America/Sao_Paulo',
-                };
+                } as const;
                 const formatter = new Intl.DateTimeFormat('pt-BR', options);
                 this.spreadOilDates = data.points.map(
                     (point: IPointType[], index: number) => {
@@ -701,7 +701,7 @@ export default class LayerControlSidebar extends Vue {
                 year: 'numeric',
                 month: 'numeric',
                 day: 'numeric',
-            };
+            } as const;
             const formatter = new Intl.DateTimeFormat('pt-BR', options);
             this.vectorsLayer = L.tileLayer.wms(
                 oceanVectorsOptions.get(this.mapModel).path,
@@ -864,7 +864,7 @@ export default class LayerControlSidebar extends Vue {
                 year: 'numeric',
                 month: 'numeric',
                 day: 'numeric',
-            };
+            } as const;
             const formatter = new Intl.DateTimeFormat('pt-BR', options);
 
             this.onChangeDateSelection(formatter.format(new Date()));

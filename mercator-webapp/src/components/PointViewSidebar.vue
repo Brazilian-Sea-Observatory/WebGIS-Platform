@@ -34,7 +34,7 @@ export default class PointViewSidebar extends Vue {
     public genChart(data: any) {
         const options = {
             year: 'numeric', month: 'numeric', day: 'numeric'
-        }
+        } as const;
         const formatter = new Intl.DateTimeFormat('pt-BR', options);
         const date = data.map((value: { date: string, value: number}) =>
             formatter.format(new Date(value.date))

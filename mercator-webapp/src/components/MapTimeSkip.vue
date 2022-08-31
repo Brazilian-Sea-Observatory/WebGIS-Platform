@@ -224,7 +224,7 @@ export default class MapTimeSkip extends Vue {
     dateObject.setDate(dateObject.getDate() + (plus || 0));
      const options = {
           year: 'numeric', month: 'numeric', day: 'numeric'
-      }
+      } as const;
       const formatter = new Intl.DateTimeFormat('pt-BR', options);
     return formatter.format(dateObject);
   }
