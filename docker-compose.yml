@@ -39,15 +39,15 @@ services:
     image: "frontend:latest"
     network_mode: host
     volumes:
-      - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot
+      #- ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot/:ro
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   certbot:
-    image: certbot/certbot
+    image: certbot/certbot:latest
     volumes:
-      - ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot
+      #- ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot/:rw
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
   backend:
