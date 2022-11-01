@@ -15,10 +15,6 @@ RUN npm run build
 FROM nginx:1.13.12-alpine as production-stage
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/node_modules/vue/dist /usr/share/nginx/html
-# O container frontend tem ficado no estado Restarting. Ao consultar o docker logs <CONTAINER ID> aparece:
-# open() "/etc/letsencrypt/options-ssl-nginx.conf" failed (2: No such file or directory) in /etc/nginx/nginx.conf:38 
-# Ocorre que a linha 38 de nginx.conf está comentada: 	# include /etc/letsencrypt/options-ssl-nginx.conf;
-# Tentarei a opção no-cache
 COPY nginx.conf /etc/nginx/nginx.conf
 # Estou comentando os próximos 4 comandos porque a ligação dos .pem que são gerados no docker certbot com o frontend passará a ser feita pelos volumes dos respectivos serviços: certbot e frontend
 #RUN mkdir -p /root/certs/brasea.org/
