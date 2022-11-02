@@ -56,16 +56,19 @@ services:
 
   nginx:
     container_name: nginx
-    image: nginx:stable
+    build: ./mercator-webapp
+      context: ./nginx
+      network: host
+      args:
+        - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
+        - DOMAIN_LIST=brasea.org,www.brasea.org #replace with your own domains
     restart: always
     volumes:
-      - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/config/conf.d/local:/etc/nginx/conf.d
-      - /tmp/logs/nginx:/var/log/nginx
-      - ./nginx/html:/var/www/public/content
+      - ./nginx/config/conf.d/prod:/etc/nginx/conf.d
+      - letsencrypt:/etc/letsencrypt
     ports:
       - "80:80"
-
+      - "443:443"
 
   backend:
     depends_on: 
@@ -172,4 +175,3 @@ volumes:
   pgdata:
     driver: local
 
-      
