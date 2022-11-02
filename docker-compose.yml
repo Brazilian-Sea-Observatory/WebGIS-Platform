@@ -56,7 +56,7 @@ services:
 
   nginx:
     container_name: nginx
-    build: ./mercator-webapp
+    build:
       context: ./nginx
       network: host
       args:
