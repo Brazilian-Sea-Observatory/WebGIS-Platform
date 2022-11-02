@@ -15,3 +15,5 @@ VOLUME /etc/letsencrypt
 
 CMD [ "sh", "-c", "cron && nginx -g 'daemon off;'" ]
 
+EXPOSE 80/tcp
+EXPOSE 443/tcp
