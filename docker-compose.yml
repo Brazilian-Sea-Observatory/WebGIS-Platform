@@ -76,8 +76,8 @@ services:
       - "80:80"
       - "443:443"
 
-  networks:
-    - Nginx_network
+  #networks:
+    #- Nginx_network
 
   backend:
     depends_on: 
