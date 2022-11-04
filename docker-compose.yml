@@ -63,6 +63,10 @@ services:
         - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
         - DOMAIN_LIST=brasea.org,www.brasea.org #replace with your own domains
     restart: always
+	cap_add:
+		- NET_ADMIN
+	devices:
+		- "/dev/net/tun"
     volumes:
       - ./nginx/config/conf.d/prod:/etc/nginx/conf.d
       - letsencrypt:/etc/letsencrypt
