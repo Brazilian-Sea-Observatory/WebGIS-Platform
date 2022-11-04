@@ -65,6 +65,7 @@ services:
       - ./nginx/html:/var/www/public/content
     ports:
       - "80:80"
+      - "443:443"
 
 
   backend:
