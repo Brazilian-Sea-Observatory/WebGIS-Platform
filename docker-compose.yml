@@ -67,12 +67,17 @@ services:
         - NET_ADMIN
     devices:
         - "/dev/net/tun"
+    networks:
+        - Nginx_network
     volumes:
       - ./nginx/config/conf.d/prod:/etc/nginx/conf.d
       - letsencrypt:/etc/letsencrypt
     ports:
       - "80:80"
       - "443:443"
+
+  networks:
+    - Nginx_network
 
   backend:
     depends_on: 
