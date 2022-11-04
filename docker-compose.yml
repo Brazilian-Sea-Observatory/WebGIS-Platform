@@ -67,8 +67,8 @@ services:
         - NET_ADMIN
     devices:
         - "/dev/net/tun"
-    networks:
-        - Nginx_network
+    #networks:
+        #- Nginx_network
     volumes:
       - ./nginx/config/conf.d/prod:/etc/nginx/conf.d
       - letsencrypt:/etc/letsencrypt
