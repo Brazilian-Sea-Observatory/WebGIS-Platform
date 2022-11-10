@@ -34,24 +34,29 @@ services:
     depends_on:
       - backend
         # - webserver
-    build: ./mercator-webapp
+    build: 
+      context: ./mercator-webapp
+      args:
+        - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
+        - DOMAIN_LIST=brasea.org,www.brasea.org #replace with your own domains
     restart: always  
     image: "frontend:latest"
     network_mode: host
     volumes:
       #- ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot/:ro
+      #- ./data/certbot/www:/var/www/certbot/:ro
       #- ./data/certbot/conf/:/etc/nginx/www/:ro
-      - ./data/certbot/conf/:/usr/share/nginx/html/:ro
-    #command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+      - ./data/certbot/www:/usr/share/nginx/html:ro
+      - ./data/certbot/letsencrypt:/usr/share/nginx/html:ro
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   certbot:
     build: ./mercator-webapp
     image: certbot/certbot:latest
     volumes:
       #- ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot/:rw
-      - ./data/certbot/conf/:/etc/letsencrypt/:rw
+      - ./data/certbot/www:/var/www/certbot:rw
+      - ./data/certbot/conf:/etc/letsencrypt:rw
     #entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
   backend:
