@@ -17,7 +17,7 @@ RUN npm run build
 FROM nginx:stable as production-stage
 
 ARG CERTBOT_EMAIL=humberto.ibanez@gmail.com
-ARG DOMAIN_LIST
+ARG DOMAIN_LIST=brasea.org
 
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/node_modules/vue/dist /usr/share/nginx/html
