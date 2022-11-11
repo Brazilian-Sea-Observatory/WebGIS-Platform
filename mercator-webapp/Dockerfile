@@ -13,7 +13,12 @@ RUN npm run build
 
 # estágio de produção
 #FROM nginx:1.13.12-alpine as production-stage
+
 FROM nginx:stable as production-stage
+
+ARG CERTBOT_EMAIL=humberto.ibanez@gmail.com
+ARG DOMAIN_LIST
+
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/node_modules/vue/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
