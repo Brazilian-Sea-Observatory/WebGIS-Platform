@@ -153,6 +153,7 @@ services:
     restart: always
 
 volumes:
+  letsencrypt:
   db-backups:
   geoserver-data:
     driver: local
