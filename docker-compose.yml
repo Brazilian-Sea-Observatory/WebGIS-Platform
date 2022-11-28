@@ -49,6 +49,7 @@ services:
       #- ./data/certbot/conf/:/etc/nginx/www/:ro
       #- ./data/certbot/www:/usr/share/nginx/html:ro
       #- ./data/certbot/letsencrypt:/usr/share/nginx/html:ro
+    command: "/bin/sh -c 'nginx -g \"daemon off;\"'"
     #command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   certbot:
