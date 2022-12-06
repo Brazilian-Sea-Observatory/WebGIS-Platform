@@ -39,6 +39,9 @@ services:
       args:
         - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
         - DOMAIN_LIST=brasea.org #replace with your own domains
+    ports:
+      - 80:80
+      - 443:443
     restart: always  
     image: "frontend:latest"
     network_mode: host
