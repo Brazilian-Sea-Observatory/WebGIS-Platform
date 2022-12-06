@@ -21,8 +21,7 @@ ARG DOMAIN_LIST=brasea.org
 
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 COPY --from=build-stage /app/node_modules/vue/dist /usr/share/nginx/html
-RUN mkdir /usr/share/nginx/html/.well-known
-RUN mkdir /usr/share/nginx/html/.well-known/acme-challenge
+#RUN mkdir /usr/share/nginx/html/.well-known;mkdir /usr/share/nginx/html/.well-known/acme-challenge
 COPY nginx.conf /etc/nginx/nginx.conf
 # Estou comentando os próximos 4 comandos porque a ligação dos .pem que são gerados no docker certbot com o frontend passará a ser feita pelos volumes dos respectivos serviços: certbot e frontend
 #RUN mkdir -p /root/certs/brasea.org/
