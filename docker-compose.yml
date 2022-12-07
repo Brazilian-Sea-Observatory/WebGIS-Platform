@@ -56,28 +56,37 @@ services:
 
   test_nginx:
     container_name: test_nginx
-    build:
-      context: ./nginx
-      network: host
-      args:
-        - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
-        - DOMAIN_LIST=brasea.org,www.brasea.org #replace with your own domains
+    image: nginx:stable
     restart: always
-    cap_add:
-        - NET_ADMIN
-        - SYS_ADMIN
-    devices:
-        - "/dev/net/tun"
-    #networks:
-        #- Nginx_network
     volumes:
-      - ./nginx/config/conf.d/prod:/etc/nginx/conf.d
-      - letsencrypt:/etc/letsencrypt
+      - ./nginx/config/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/config/conf.d/local:/etc/nginx/conf.d
+      - /tmp/logs/nginx:/var/log/nginx
+      - ./nginx/html:/var/www/public/content
     ports:
       - "80:80"
-      - "443:443"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+
+#    build:
+#      context: ./nginx
+#      network: host
+#      args:
+#        - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
+#        - DOMAIN_LIST=brasea.org,www.brasea.org #replace with your own domains
+#    cap_add:
+#        - NET_ADMIN
+#        - SYS_ADMIN
+#    devices:
+#        - "/dev/net/tun"
+    #networks:
+        #- Nginx_network
+#    volumes:
+#      - ./nginx/config/conf.d/prod:/etc/nginx/conf.d
+#      - letsencrypt:/etc/letsencrypt
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
 
   #networks:
     #- Nginx_network
