@@ -159,3 +159,39 @@ sudo /usr/local/bin/docker-compose up -d webserver
 sudo /usr/local/bin/docker-compose up -d geoserver
 
 
+13 - Criar link para executar localmente e acessar remotamente (opcional)
+
+Este passo assume que um servidor remoto não acessível diretamente pela internet estará executando o serviço.
+Uma ilustração  desse cenário é:   Seu computador  <->   Ponte   <->   Servidor local hospedando a aplicação
+
+Na sua máquina local, configure o acesso direto à servidora por meio do ssh config
+
+```bash
+
+echo '
+Host nr2 # Nome do servidor acessivel publicamente
+   User brunomr # Username da maquina acessivel publicamente
+   HostName <IP DA MAQUINA ACESSIVEL PUBLICAMENTE>
+
+' >> ~/.ssh/config
+
+echo '
+Host aura # Nome do servidor local
+   User brunomr # Usuario
+   HostName 192.168.1.10 # IP do servidor local
+   # IdentityFile /home/brunomr/.ssh/id_rsa # Caso queira deixar chave de acesso configurada
+   ProxyCommand ssh -4 -W %h:%p nr2
+' >> ~/.ssh/config
+```
+
+Agora abra uma ponte para conectar o Webserver do servidor local com uma porta do seu computador local
+
+```bash
+ssh -o ServerAliveInterval=60 -i ~/.ssh/id_rsa -L 3000:[localhost]:443 brunomr@aura
+```
+
+No exemplo a porta 3000 do computador estará acessando o servidor https do Webserver.
+Também, o parâmetro ServerAliveInterval=60 ajuda com problemas de conexões instáveis
+
+Se preferir, é possível fazer o link via ssh sem usar o sshconfig. Para isso, utilize o localhost do comando ssh trocando-o pelo ip da ponte, e faça uma segunda ponte usando a mesma porta para o servidor local
+
