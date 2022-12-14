@@ -34,10 +34,17 @@ services:
     depends_on:
       - backend
         # - webserver
+#    dns:
+#      - 127.0.0.1
+#      - 8.8.8.8
+#      - 192.168.1.1
     build: ./mercator-webapp
     restart: always  
     image: "mercator/frontend:latest"
-    network_mode: host
+    network_mode: "host"
+#    network_mode: "bridge"
+#    ports:
+#        - "80:8002"
   
   backend:
     depends_on: 
@@ -67,7 +74,7 @@ services:
     environment:
       SPREAD_OIL_PATH: '/oil-data'
     volumes:
-      - /home/maretec/Lagrangian_Global/BSO:/oil-data
+      - /home/brunomr/WebGIS-Platform/Lagrangian_Global/BSO:/oil-data
       - ./mercator-server/wind-data:/wind-data
     ports:
       - "8443:8443"
@@ -139,7 +146,7 @@ volumes:
       type: none
       o: bind
       #device: /home/maretec/mercator/geoserver_data #substitui mercator por WebGIS-Platform
-      device: /home/maretec/WebGIS-Platform/geoserver/geoserver_data 
+      device: /home/brunomr/WebGIS-Platform/geoserver/geoserver_data 
   geo-db-data:
   pgdata:
     driver: local

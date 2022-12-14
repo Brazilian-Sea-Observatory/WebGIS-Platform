@@ -4,6 +4,7 @@ WORKDIR /home/jovyan/work
 
 COPY ./requirements.txt ./requirements.txt
 
+RUN conda config --set ssl_verify no
 RUN conda update -n base conda
 RUN conda install --file requirements.txt -y
 

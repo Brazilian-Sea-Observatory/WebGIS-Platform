@@ -16,6 +16,10 @@ COPY ecosystem.config.js .
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
+
+RUN npm config set registry http://registry.npmjs.org/
+RUN npm cache clean --force
+
 RUN npm install --production
 
 # Expose the listening port of your app

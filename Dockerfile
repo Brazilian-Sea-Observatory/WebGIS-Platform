@@ -4,7 +4,7 @@ WORKDIR /home/geoserver/mercator_routine_products
 
 COPY . .
 
-RUN apt-get update -y && apt-get install pkg-config libgirepository1.0-dev libcairo2-dev build-essential -y
+RUN apt-get --allow-releaseinfo-change update -y && apt-get install pkg-config libgirepository1.0-dev libcairo2-dev build-essential -y
 RUN apt-get install libcurl4-openssl-dev libssl-dev curl python2.7 python3-cairo-dev -y
 RUN apt-get install cron -y 
 RUN pip install --upgrade pip
