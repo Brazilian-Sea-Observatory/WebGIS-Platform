@@ -124,7 +124,10 @@ class routineGeneral():
                 programsLine = DIR_PYTHON + ' ' + DIR + '/' + DIR_MOTU_CLIENT + '/motuclient.py ' + '--user ' +  USER_COPERNICUS + ' --pwd ' + PWD_COPERNICUS
                 variableLine = '--service-id ' + self.serviceID + ' --product-id ' + self.productID + ' --variable ' + self.variable
                 dateLine = self.calculateStartEndDate()
-                commonParametersLine = '--longitude-min -180 --longitude-max 179.9166717529297 --latitude-min -80 --latitude-max 90 --motu http://nrt.cmems-du.eu/motu-web/Motu'
+                #hci29mar2023 Modificar de http para https e de Full Region para South Atlantic
+                #commonParametersLine = '--longitude-min -180 --longitude-max 179.9166717529297 --latitude-min -80 --latitude-max 90 --motu http://nrt.cmems-du.eu/motu-web/Motu'
+                commonParametersLine = '--longitude-min -70 --longitude-max 25 --latitude-min -75 --latitude-max 10 --motu https://nrt.cmems-du.eu/motu-web/Motu'
+                
                 downloadLine =  '--out-dir ' + self.outputDir  + ' --out-name ' + self.tempOutputName + '.nc'
 
                 scriptExecute = programsLine + ' ' + variableLine + ' ' + dateLine + ' ' + self.aditionalParams + ' ' + commonParametersLine + ' ' + downloadLine
