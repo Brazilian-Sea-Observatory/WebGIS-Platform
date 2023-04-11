@@ -44,10 +44,10 @@ services:
       - 443:443
     restart: always  
     image: "frontend:latest"
-    network_mode: host
-    volumes:
-      - ./mercator-webapp/certboot/www:/var/www/certbot/:ro
-      - letsencrypt:/etc/letsencrypt
+    #network_mode: host
+    #volumes:
+      #- ./mercator-webapp/certboot/www:/var/www/certbot/:ro
+      #- letsencrypt:/etc/letsencrypt
       #- ./data/certbot/conf:/etc/letsencrypt
       #- ./data/certbot/www:/var/www/certbot/:ro
       #- ./data/certbot/conf/:/etc/nginx/www/:ro
@@ -55,7 +55,7 @@ services:
       #- ./data/certbot/letsencrypt:/usr/share/nginx/html:ro
     #command: "/bin/sh -c 'nginx -g \"daemon off;\"'"
     #command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
-    command: "/bin/sh -c 'while :; do sleep 6h; nginx -s reload; done & exec nginx -g \"daemon off;\"'"
+    #command: "/bin/sh -c 'while :; do sleep 6h; nginx -s reload; done & exec nginx -g \"daemon off;\"'"
 
   certbot:
     build: ./mercator-webapp
