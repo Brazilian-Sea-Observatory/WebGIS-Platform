@@ -71,7 +71,7 @@ services:
     build: ./letsencrypt-docker-compose
     image: evgeniy-khyst/expressjs-helloworld
     networks:
-      - letsencrypt-docker-compose
+      - letsencrypt-docker-compose_default
     restart: unless-stopped
  
 
