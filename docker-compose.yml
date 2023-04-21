@@ -68,7 +68,7 @@ services:
 
   #https://github.com/evgeniy-khist/letsencrypt-docker-compose
   example-backend:
-    build: ./examples/nodejs-backend
+    build: ./letsencrypt-docker-compose
     image: evgeniy-khyst/expressjs-helloworld
     networks:
       - letsencrypt-docker-compose
