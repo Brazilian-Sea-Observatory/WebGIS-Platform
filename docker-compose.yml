@@ -66,6 +66,14 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt:rw
     #entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
+  example-backend:
+    build: ./examples/nodejs-backend
+    image: evgeniy-khyst/expressjs-helloworld
+    networks:
+      - letsencrypt-docker-compose
+    restart: unless-stopped
+ 
+
   backend:
     depends_on: 
       - mercator_db
@@ -172,4 +180,8 @@ volumes:
   pgdata:
     driver: local
 
-      
+networks:
+  letsencrypt-docker-compose:
+    name: letsencrypt-docker-compose_default
+    external: true
+

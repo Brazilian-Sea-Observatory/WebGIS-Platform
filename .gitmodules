@@ -1,3 +1,6 @@
 [submodule "mercator_routine_products"]
 	path = mercator_routine_products
 	url = https://andr3lsm@bitbucket.org/lh_development/mercator_routine_products.git
+[submodule "letsencrypt-docker-compose"]
+	path = letsencrypt-docker-compose
+	url = https://github.com/evgeniy-khist/letsencrypt-docker-compose.git
