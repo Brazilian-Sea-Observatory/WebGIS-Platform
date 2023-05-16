@@ -22,7 +22,7 @@ RUN npm run build
 
 #COPY --from=build-stage /app/dist /usr/share/nginx/html
 #16mai2023 COPY --from=build-stage /app/node_modules/vue/dist /usr/share/nginx/html
-COPY --from=build-stage /app/node_modules/vue/dist ./letsencrypt-docker-compose/html
+#16mai2023 ERROR: failed to solve: circular dependency detected on stage: build-stage COPY --from=build-stage /app/node_modules/vue/dist ./letsencrypt-docker-compose/html
 #16mai2023 No nginx de letsencrypt-docker-compose/docker-compose.yml tem o volume ./html:/var/www/html:ro
 #RUN mkdir /usr/share/nginx/html/.well-known;mkdir /usr/share/nginx/html/.well-known/acme-challenge
 #16mai2023 COPY nginx.conf /etc/nginx/nginx.conf
