@@ -80,10 +80,18 @@ services:
     restart: unless-stopped
 
   # Replace with your backend image or remove
+  # Substituído pelas configurações do frontend para verificar se conseguimos subi-lo com este conjunto
   example-backend:
-    build: ./examples/nodejs-backend
-    image: evgeniy-khyst/expressjs-helloworld
-    restart: unless-stopped
+    #build: ./examples/nodejs-backend
+    build: 
+      context: ../../mercator-webapp
+    #image: evgeniy-khyst/expressjs-helloworld
+    image: "frontend:latest"
+    ports:
+      - 80:80
+      - 443:443
+    #restart: unless-stopped
+    restart: always
 
 volumes:
   nginx_conf_ssl:
