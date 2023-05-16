@@ -36,35 +36,23 @@ services:
         # - webserver
     build: 
       context: ./mercator-webapp
-      args:
-        - CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
-        - DOMAIN_LIST=brasea.org #replace with your own domains
+      #args:
+        #- CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
+        #- DOMAIN_LIST=brasea.org #replace with your own domains
     ports:
       - 80:80
       - 443:443
     restart: always  
     image: "frontend:latest"
-    network_mode: host
-    volumes:
-      - ./mercator-webapp/certboot/www:/var/www/certbot/:ro
-      - letsencrypt:/etc/letsencrypt
-      #- ./data/certbot/conf:/etc/letsencrypt
-      #- ./data/certbot/www:/var/www/certbot/:ro
-      #- ./data/certbot/conf/:/etc/nginx/www/:ro
-      #- ./data/certbot/www:/usr/share/nginx/html:ro
-      #- ./data/certbot/letsencrypt:/usr/share/nginx/html:ro
+    networks:
+      - letsencrypt-docker-compose
+    #network_mode: host
+    #volumes:
+      #- ./mercator-webapp/certboot/www:/var/www/certbot/:ro
+      #- letsencrypt:/etc/letsencrypt
     #command: "/bin/sh -c 'nginx -g \"daemon off;\"'"
     #command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
     command: "/bin/sh -c 'while :; do sleep 6h; nginx -s reload; done & exec nginx -g \"daemon off;\"'"
-
-  certbot:
-    build: ./mercator-webapp
-    image: certbot/certbot:latest
-    volumes:
-      #- ./data/certbot/conf:/etc/letsencrypt
-      - ./data/certbot/www:/var/www/certbot:rw
-      - ./data/certbot/conf:/etc/letsencrypt:rw
-    #entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
 
   backend:
     depends_on: 
@@ -101,7 +89,7 @@ services:
     environment:
       SPREAD_OIL_PATH: '/oil-data'
     volumes:
-      - /home/maretec/Lagrangian_Global/BSO:/oil-data
+      - ./Lagrangian_Global/BSO:/oil-data
       - ./mercator-server/wind-data:/wind-data
     ports:
       - "8443:8443"
@@ -158,7 +146,7 @@ services:
   scripts:
     build: ./mercator_routine_products
     volumes:
-      - /home/ubuntu/ftplocal:/home/evx/ftp/files/
+      # retirado por não existir em maretecVM - /home/ubuntu/ftplocal:/home/evx/ftp/files/
       - ./geoserver/geoserver_data:/home/geoserver/geoserver_data
     depends_on:
       # - geoserver
@@ -166,15 +154,14 @@ services:
     restart: always
 
 volumes:
-  letsencrypt:
   db-backups:
   geoserver-data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      #device: /home/maretec/mercator/geoserver_data #substitui mercator por WebGIS-Platform
-      device: /home/maretec/WebGIS-Platform/geoserver/geoserver_data 
+      #device: /home/maretec/mercator/geoserver_data #substitui mercator por WebGIS-Platform e maretec por humberto
+      device: /home/humberto/WebGIS-Platform/geoserver/geoserver_data 
   geo-db-data:
   pgdata:
     driver: local
