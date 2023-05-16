@@ -81,18 +81,18 @@ services:
 
   # Replace with your backend image or remove
   # Substituído pelas configurações do frontend para verificar se conseguimos subi-lo com este conjunto
-  example-backend:
+  #16mai2023 example-backend:
     #build: ./examples/nodejs-backend
-    build: 
-      context: ../../mercator-webapp
+    #16mai2023 build: 
+      #16mai2023 context: ../../mercator-webapp
     #image: evgeniy-khyst/expressjs-helloworld
-    image: "frontend:latest"
+    #16mai2023 image: "frontend:latest"
     #Bind for 0.0.0.0:443 failed: port is already allocated
     #ports:
       #- 80:80
       #- 443:443
     #restart: unless-stopped
-    restart: always
+    #16mai2023 restart: always
 
 volumes:
   nginx_conf_ssl:

@@ -39,20 +39,20 @@ services:
       #args:
         #- CERTBOT_EMAIL=humberto.ibanez@gmail.com #replace with your own email
         #- DOMAIN_LIST=brasea.org #replace with your own domains
-    ports:
-      - 80:80
-      - 443:443
-    restart: always  
+    #ports:
+      #- 80:80
+      #- 443:443
+    restart: unless-stopped  
     image: "frontend:latest"
-    #networks:
-      #- letsencrypt-docker-compose
+    networks:
+      - letsencrypt-docker-compose
     #network_mode: host
     #volumes:
       #- ./mercator-webapp/certboot/www:/var/www/certbot/:ro
       #- letsencrypt:/etc/letsencrypt
     #command: "/bin/sh -c 'nginx -g \"daemon off;\"'"
     #command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
-    command: "/bin/sh -c 'while :; do sleep 6h; nginx -s reload; done & exec nginx -g \"daemon off;\"'"
+    #16mai2023 command: "/bin/sh -c 'while :; do sleep 6h; nginx -s reload; done & exec nginx -g \"daemon off;\"'"
 
   backend:
     depends_on: 
