@@ -44,8 +44,8 @@ services:
       - 443:443
     restart: always  
     image: "frontend:latest"
-    networks:
-      - letsencrypt-docker-compose
+    #networks:
+      #- letsencrypt-docker-compose
     #network_mode: host
     #volumes:
       #- ./mercator-webapp/certboot/www:/var/www/certbot/:ro
