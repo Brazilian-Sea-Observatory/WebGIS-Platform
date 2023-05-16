@@ -87,6 +87,13 @@ services:
     restart:
       always
   
+  example-backend:
+    build: ./mercator-webapp/letsencrypt-docker-compose/examples/nodejs-backend
+    image: evgeniy-khyst/expressjs-helloworld
+    networks:
+      - letsencrypt-docker-compose
+    restart: unless-stopped
+
   webserver:
     build: ./mercator-server
     restart: always
@@ -172,4 +179,8 @@ volumes:
   pgdata:
     driver: local
 
-      
+networks:
+  letsencrypt-docker-compose:
+    name: letsencrypt-docker-compose_default
+    external: true
+
