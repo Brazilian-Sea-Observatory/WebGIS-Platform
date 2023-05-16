@@ -87,9 +87,10 @@ services:
       context: ../../mercator-webapp
     #image: evgeniy-khyst/expressjs-helloworld
     image: "frontend:latest"
-    ports:
-      - 80:80
-      - 443:443
+    #Bind for 0.0.0.0:443 failed: port is already allocated
+    #ports:
+      #- 80:80
+      #- 443:443
     #restart: unless-stopped
     restart: always
 
