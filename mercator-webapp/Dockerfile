@@ -11,6 +11,8 @@ RUN npm install
 COPY . .
 RUN npm run build
 
+COPY /app/node_modules/vue/dist /letsencrypt-docker-compose/html
+
 # estágio de produção
 #FROM nginx:1.13.12-alpine as production-stage
 
