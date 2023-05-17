@@ -2,7 +2,7 @@
 FROM node:10.15.1-alpine as build-stage
 RUN mkdir /app
 WORKDIR /app
-COPY package.json ./
+COPY ../../../mercator-webapp/package.json ./
 RUN npm cache verify
 RUN rm -rf node_modules
 RUN rm -rf package-lock.json
