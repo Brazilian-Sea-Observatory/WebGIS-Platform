@@ -2,7 +2,7 @@
 FROM node:10.15.1-alpine as build-stage
 RUN mkdir /app
 WORKDIR /app
-RUN cp /home/humberto/WebGIS-Platform/mercator-webapp/package.json ./
+COPY package.json ./
 RUN npm cache verify
 RUN rm -rf node_modules
 RUN rm -rf package-lock.json
