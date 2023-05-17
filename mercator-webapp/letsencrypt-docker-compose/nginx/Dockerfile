@@ -1,5 +1,7 @@
 # estágio de compilação (copiado do Dockerfile de mercator-webapp)
-FROM node:10.15.1-alpine as build-stage
+#FROM node:10.15.1-alpine as build-stage
+#https://stackoverflow.com/a/62064450
+FROM node:latest as build-stage
 RUN mkdir /app
 WORKDIR /app
 COPY package.json ./
