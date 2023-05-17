@@ -9,6 +9,8 @@ RUN rm -rf package-lock.json
 RUN npm install node-sass --save
 RUN npm install
 COPY . .
+#https://stackoverflow.com/a/71262331
+ENV NODE_ENV=production
 RUN npm run build
 
 # estágio de produção
