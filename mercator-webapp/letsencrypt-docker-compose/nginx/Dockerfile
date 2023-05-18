@@ -8,6 +8,7 @@ COPY package.json ./
 RUN npm cache verify
 RUN rm -rf node_modules
 RUN rm -rf package-lock.json
+RUN export PYTHON=python2
 RUN npm install node-sass --save
 RUN npm install
 COPY . .
