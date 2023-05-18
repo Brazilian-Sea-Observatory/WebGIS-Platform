@@ -9,7 +9,9 @@ RUN npm cache verify
 RUN rm -rf node_modules
 RUN rm -rf package-lock.json
 RUN export PYTHON=python2
-RUN npm install node-sass --save
+#npm install node-sass --save https://dev.to/ccreusat/migrating-from-node-sass-to-sass-dart-sass-with-npm-3g3c
+RUN npm install --save-dev sass 
+RUN npm i -D sass
 RUN npm install
 COPY . .
 #https://stackoverflow.com/a/71262331
